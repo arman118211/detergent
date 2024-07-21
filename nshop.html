@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saafi Ariel-shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+      
+
+        /* Your CSS styles go here */
+        body{
+            background-color: #f1f1f1;
+            
+            margin: 0;
+        }
+        header {
+            position: sticky;
+      top: 0;
+      z-index: 1000;
+            
+            min-width: 800px; /* Set a minimum width for the header */
+        }
+
+        #header-links {
+            position: absolute;
+            top: 0px;
+            right: 20px;
+        }
+        #header-links a:hover{
+            color: #5851DB;
+            font-size: 21px;
+        }
+        
+        #languageSelect {
+            margin-right: 38px;
+  font-size: 20px; /* Increase font size */
+  border: none; /* Remove border initially */
+  background-color: transparent; /* Remove background color */
+  padding: 8px; /* Adjust padding as needed */
+  outline: none; /* Remove outline */
+  color: #35408c;
+  font-family: inherit;
+}
+
+#languageSelect:focus {
+  border: none; /* Remove border on focus */
+}
+#languageSelect:hover{
+    font-size: 21px;
+    color: #5851DB;
+}
+/* Style for the options */
+#languageSelect option {
+  border: none; /* Remove border for options */
+}
+/* Responsive styling using media queries */
+@media screen and (min-width: 768px) {
+  /* Adjusting the maximum width for larger screens */
+  #languageSelect {
+    max-width: 300px;
+  }
+}
+        
+        img{
+            width: 100%;
+        }
+
+        #bottom-left-links {
+            position: absolute;
+            bottom: 20px;
+            left: 362px;
+        }
+
+        /* Increase the height and width of the link text */
+        #header-links a {
+            display: inline-block;
+            margin-right: 20px; /* Increased spacing between links */
+            text-decoration: none;
+            padding: 10px 20px; /* Padding for spacing, adjust as needed */
+            
+            color: #35408c; /* Text color for links */
+             
+            line-height: 30px; /* Increase the height of the link text */
+            font-size: 20px; /* Increase the font size for wider text */
+        }
+       
+
+
+         #bottom-left-links a {
+            display: inline-block;
+            margin-right: 20px; /* Increased spacing between links */
+            text-decoration: none;
+            padding: 10px 20px; /* Padding for spacing, adjust as needed */
+            
+            color: #35408c; /* Text color for links */
+             
+            line-height: 30px; /* Increase the height of the link text */
+            font-size: 19px; /* Increase the font size for wider text */
+        }
+        #bottom-left-links a:hover{
+            color: #5851DB;
+            font-size: 20px;
+            
+        }
+
+        /* Add styles for the search bar */
+        #search-bar {
+            width: 200px; /* Increased width for the search bar */
+            padding: 5px;
+            border: 1px solid #35408c;
+            border-radius: 30px;
+        }
+
+
+
+        /* Add media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    body{
+        width: 376%;
+    }
+    header img{
+        width: 100%;
+    }
+    #header-links {
+        position: static;
+        text-align: center; /* Center align for smaller screens */
+        margin-top: 10px; /* Adjust spacing for smaller screens */
+    }
+    
+    #bottom-left-links {
+        position: static;
+        text-align: center; /* Center align for smaller screens */
+        margin-top: 10px; /* Adjust spacing for smaller screens */
+        width: 100%; /* Full width for smaller screens */
+    }
+    
+    #search-bar {
+        width: 60%; /* Adjusted width for smaller screens */
+        margin-top: 10px; /* Adjust spacing for smaller screens */
+    }
+    .popup-content .close-btn{
+        top: 758px;
+        right: 219px;
+    }
+    .details-popup .popup-content{
+        max-height: 199vh;
+    }
+    
+}
+
+
+        #msg{
+            margin-top: -4px;
+    text-align: center;
+    background-color: white;
+    
+    
+    
+}
+#msg p {
+    color: #35408c;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p{
+    font-size: 27px;
+}
+
+
+
+
+        .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: top 20% right 0;
+   
+    
+   
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Position the text over the images */
+.text {
+    position: absolute;
+    top: 150px; /* Adjust the distance from the top */
+    left: 60px; /* Adjust the distance from the left */
+    color:white; /* Adjust text color */
+     /* Adjust background color */
+    padding: 10px; /* Adjust padding */
+
+    height: 90vh;
+    width: 100%;
+  
+    
+}
+.text button{
+    border: 1px;
+    width: 161px;
+    height: 53px;
+    border-radius: 20px;
+    font-size: 21px;
+    background-color: #35408c;
+    color: white;
+}
+.text button:hover{
+    background-color: #5851DB;
+}
+.text h4{
+    font-size: 20px;
+}
+.text h2{
+    font-size: 46px;
+    line-height: 0px;
+}
+.text h1{
+    font-size: 50px;
+    line-height: 0px;
+}
+.text h2{
+    font-size: 27px;
+    line-height: 0px;
+}
+/* Style for the images in the slideshow */
+.slide img {
+    width: 100%;
+    height: 700px;
+}
+
+
+#msg2{
+    margin-bottom: -35px;
+    text-align: initial;
+    background-color: #f1f1f1;
+    
+    
+    
+    
+}
+#msg2 p {
+    color: #35408c;
+    margin-top: 23px;
+    margin-bottom: 40px;
+    margin-left: 115px;
+    font-size: 42px;
+    background-color: #f1f1f1;
+}
+p{
+    font-size: 27px;
+}
+
+#msg2 h3 {
+    color: #35408c;
+    margin-top: -25px;
+    margin-bottom: 40px;
+    margin-left: 115px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+}
+
+
+/* for card */
+
+#card1{
+            background-color: #f1f1f1;
+        }
+        .card-container {
+            margin-left: 208px;
+            margin-right: 208px;
+            display: flex;
+            justify-content: space-between; /* Adjust as needed */
+            
+        
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 446px;
+            background-color:white;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+        }
+       
+
+        .card-content {
+            padding: 20px;
+        }
+        .card:hover img {
+            transform: scale(1.1); /* Increase size on hover */
+        }
+
+        .card h2 {
+            color: #ee1d23;
+        }
+
+        .card p {
+            color: #35408c;
+        }
+
+
+         /* featured product */
+          /* Flex container to create a row */
+          .card-container1 {
+            margin-left: 100px;
+            margin-right: 100px;
+            display: flex;
+            justify-content: space-around; /* Adjust as needed */
+            flex-wrap: nowrap; /* Ensure cards stay in one row */
+        }
+
+        /* Card styles */
+        .card2 {
+            flex: 0 0 22%; /* Adjust width as needed */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px;
+            text-align: center;
+        }
+        .card2 h2{
+            color:#ee1d23 ;
+        }
+
+        .card2 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 16px;
+            transition: transform 0.3s ease-in-out; /* Add smooth transition */
+        }
+
+        .card2 img:hover {
+            transform: scale(1.1); /* Add scale effect on hover */
+        }
+
+        .star-rating {
+            margin-top: 8px;
+           /* Set star color to gold */
+            color: #35408c;
+            font-size: 1.5em;
+        }
+
+        .shop-button {
+            background-color: #35408c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 8px;
+            transition: background-color 0.3s ease-in-out; /* Add smooth transition */
+        }
+
+        .shop-button:hover {
+            background-color: #5851DB; /* Change color on hover */
+        }
+
+
+ /* saafigram*/
+         /* Flex container to create rows */
+         .image-container {
+            margin-left: 115px;
+            margin-right: 115px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        /* Style for individual images */
+        .image-card {
+            flex: 0 0 20%; /* Adjust width as needed */
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+       .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out; /* Add smooth transition */
+        }
+
+       .image-card img:hover {
+            transform: scale(1.1); /* Add scale effect on hover */
+        }
+
+
+       /* button instagram */
+       .insta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15vh;
+            margin: 0;
+        }
+
+        .insta button {
+            padding: 10px 20px;
+            font-size: 23px;
+            background-color: #35408c;
+            color: white;
+            border: none;
+            border-radius: 35px;
+            cursor: pointer;
+        }
+
+        .insta button:hover {
+            background-color: #5851DB;
+            font-size: 24px;
+        }
+
+     /* three sub heading*/
+
+        .subheading1{
+            margin-top: -40px;
+            margin-left: 0px;
+            color: #35408c;
+            background-color: white;
+        }
+        .subheading1 h1{
+            margin-bottom: 10px;
+            margin-left: 115px;
+            
+            font-size: 42px;
+        }
+        .subheading1 h2{
+            font-size: 20px;
+            margin-left: 115px;
+            
+            
+        }
+        
+        .subheading-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .subheading-container div {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .subheading-container div p {
+            margin-top: -14px;
+        }
+        .subheading-container div .down {
+            margin-top: 53px;
+        }
+        .subheading-container div a {
+            text-decoration: none;
+            color: #35408c;
+            margin-left: 115px;
+            font-size: 17px;
+        }
+        .subheading-container div a:hover {
+            color: #5851DB;
+            font-size:18px ;
+        }
+
+      /* footer*/
+
+        footer {
+      position: inherit;
+      height: 115px; /* Adjust the height of your header image */
+      background: url('n1.png') center/cover no-repeat; /* Adjust the path to your header image */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+    }
+    .social-icons {
+        margin-right: 775px;
+        margin-top: -67px;
+      display: flex;
+    }
+    .social-icon {
+      margin-right: 23px;
+      font-size: 27px;
+      color: white;
+    }
+    .social-icon a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .social-icon:hover {
+      transform: scale(1.2); /* Adjust the scale factor for the hover effect */
+    }
+     #ariel p{
+        
+        color: #35408c;
+        font-size: 22px;
+    }
+
+
+/* single product */
+.single-product {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+    .shopping-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .shopping-card {
+            cursor: pointer;
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .shopping-card:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product-content-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .product-content {
+            display: none;
+            width: 966px; /* Set the width equal to the shopping card */
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .product-content.active {
+            display: block;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .product-card {
+            max-width: 881px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .product-card h1{
+            font-size: 35px;
+            color: #35408c;
+        }
+
+        .product-image1 {
+            margin-left: 180px;
+            width: 58%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-description {
+            margin-top: 20px;
+        }
+        .product-description p {
+            color: #35408c;
+            font-size: 15px;
+        }
+
+
+        .key-features,
+        .price {
+            margin-top: 15px;
+        }
+        .key-features
+        h3 ,li{
+            color: #35408c;
+        }
+        
+        .size-options h3,th,td{
+            color: #35408c;
+        }
+        .size-table {
+            margin-top: 15px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .size-table th,
+        .size-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .size-table th {
+            background-color: #f2f2f2;
+        }
+
+        .add-to-cart {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #35408c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover{
+            background-color: #5851DB;
+        }
+
+        
+        .usage-instructions {
+            margin-top: 20px;
+        }
+        .usage-instructions h3{
+            color: #35408c;
+        }
+
+
+
+
+
+
+
+
+         .pdetail{
+        margin-left: 115px;
+            margin-right: 115px;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+       }
+
+        .pcard {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .pcard img:hover{
+            transform: scale(1.1);
+        }
+
+        .pcard img {
+            
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .pdescription {
+            font-size: 22px;
+            color: #35408c;
+            margin-top: 10px;
+        }
+
+        .details-popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            top: 89px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 771px;
+            text-align: left;
+            animation: slideIn 0.3s ease-out;
+            overflow-y: auto;
+            max-height: 80vh;
+            box-sizing: border-box;
+            position: relative;
+            color: #35408c;
+        }
+        .popup-content img{
+            margin-left: 197px;
+            height: 257px;
+            width: 247px;
+        }
+        .popup-content h3{
+            margin-left: 15px;
+        }
+
+        .popup-header {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            z-index: 1;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .close-popup {
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .close-popup:hover {
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .check-details-btn {
+            background-color: #35408c;
+            color: white;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        .buy-now-btn {
+            font-size: 16px;
+            margin-left: 15px;
+            margin-bottom: 50px;
+            background-color:#35408c;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cancel-btn {
+            background-color: #ccc;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover,
+        .close-popup:hover {
+            filter: brightness(90%);
+        }
+
+
+           
+
+
+        #popupDescription {
+            font-size: 17px;
+            margin-left: 15px;
+        }
+        #popupUsageInstructions{
+            margin-left: 15px;
+            font-size: 17px;
+        }
+        #popupPrice {
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+       .quantity{
+        color: #35408c;
+        margin-top: 17px;
+        font-size: 14px;
+       }
+       #popupTitle{
+        margin-left: 38px;
+        font-size: 27px;
+       }
+       #popupKeyFeatures{
+        font-size: 17px;
+       }
+       
+      #bottom-left-links .active{
+        font-size: 20px;
+        color: #5851DB;
+        
+      }
+      
+        /* Discount style */
+        .discount {
+            color: #FF0000; /* Red color for discount */
+            font-weight: bold;
+        }
+        .price {
+            font-size: 20px;
+            margin-top: 8px;
+            font-weight: bold;
+            color: #008CBA; /* Set the color for the price */
+        }
+
+        
+
+
+      
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="head3.png" alt="Website Header Image" onclick="window.location.href='nindex.html';">
+        <div id="header-links">
+            <a href="ncontact.html">हामीलाई सम्पर्क गर्नुहोस</a>
+            <select id="languageSelect" onchange="redirectToSelectedLanguage()" onblur="removeBorder()">
+                <option value="index.html">नेपाल - अंग्रेजी</option>
+                <option value="nindex.html" selected>नेपाल - नेपाली</option>
+                
+              </select>
+              
+            <input type="text" id="search-bar" placeholder="खोज्नुहोस्">
+        </div>
+        <div id="bottom-left-links">
+            <a class="active" href="nshop.html"><b>पसल उत्पादनहरू</b></a>
+            <a href="nstep.html"><b>कपडा कसरी धुने </b></a>
+            <a href="nabout.html"><b>साफी एरियल को बारेमा </b></a>
+        </div>
+    </header>
+    <section id="msg2" >
+        <p>विशेष  <b>उत्पादनहरू</b></p>
+        
+</section> 
+    <!-- Rest of your website content goes here -->
+ <section class="pdetail">
+
+    
+<!-- Card 1 -->
+<div class="pcard">
+    <img src="a1.jpg" alt="Product 1" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप डिटर्जेंट (150g)', 'a1.jpg', 'हाम्रो उन्नत गाय छाप अल्ट्रा-क्लीन लाँड्री डिटर्जेन्ट प्रस्तुत गर्दै, तपाईंको लुगा धुने दिनचर्यामा क्रान्तिकारी परिवर्तन गर्न डिजाइन गरिएको पावरहाउस समाधान। अत्याधुनिक प्रविधिको साथ तयार गरिएको, यो डिटर्जेन्ट तपाईंको कपडाको हेरचाह गर्दा असाधारण सफाई प्रदर्शन प्रदान गर्न इन्जिनियर गरिएको छ।', ['हाम्रो डिटर्जेन्टले ट्रिपल-एक्शन सूत्र प्रयोग गर्दछ जसले दाग, फोहोर र गन्धलाई अतुलनीय दक्षताका साथ सामना गर्दछ। यसले कपडाको फाइबरमा गहिरो प्रवेश गर्छ, गाँठो हटाउँछ र तपाईंको लुगालाई उल्लेखनीय रूपमा सफा छोड्छ।', 'जिद्दी दागहरूलाई अलविदा भन्नुहोस्! हाम्रो डिटर्जेन्ट उन्नत दाग हटाउने टेक्नोलोजीसँग सुसज्जित छ जसले सबै भन्दा कठिन दागहरूलाई पनि लक्षित गर्दछ र मेटाउँछ, तपाईंको लुगा प्रत्येक नुहाइ पछि नयाँ जस्तै राम्रो देखिन्छ भनेर सुनिश्चित गर्दछ।', 'हाम्रो रंग-सुरक्षा सूत्रको साथ तपाईंको कपडाको जीवन्तता जोगाउनुहोस्। यो डिटर्जेन्ट रङको चमक कायम राख्दै कपडाहरूमा कोमल हुन्छ, त्यसैले तपाईंको मनपर्ने कपडाहरू समयसँगै ताजा र जीवन्त रहन्छन्।', 'तपाईँका कपडाहरू धोएपछि लामो समयसम्म रहने उत्साहजनक सुगन्धको आनन्द लिनुहोस्। हाम्रो डिटर्जेन्टले तपाईंको लुगा धुने समग्र सरसफाइलाई बढावा दिने सूक्ष्म स्फूर्तिदायी सुगन्ध छोड्छ।'], '20.00 ', 'इष्टतम सफाईको लागि प्रति लोड सिफारिस गरिएको रकम प्रयोग गर्नुहोस्।')">
+    <div class="pdescription"><b>गाय छाप डिटर्जेन्ट</b></div>
+    <div class="quantity"> मात्रा:<b>150 GM</b></div>
+    <div class="price">20.00 NPR <span class="discount">(15% छुट)</span></div>
+   
+   
+    
+    <div class="star-rating">★★★★☆</div>
+    <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप डिटर्जेंट (150g)', 'a1.jpg', 'हाम्रो उन्नत गाय छाप अल्ट्रा-क्लीन लाँड्री डिटर्जेन्ट प्रस्तुत गर्दै, तपाईंको लुगा धुने दिनचर्यामा क्रान्तिकारी परिवर्तन गर्न डिजाइन गरिएको पावरहाउस समाधान। अत्याधुनिक प्रविधिको साथ तयार गरिएको, यो डिटर्जेन्ट तपाईंको कपडाको हेरचाह गर्दा असाधारण सफाई प्रदर्शन प्रदान गर्न इन्जिनियर गरिएको छ।', ['हाम्रो डिटर्जेन्टले ट्रिपल-एक्शन सूत्र प्रयोग गर्दछ जसले दाग, फोहोर र गन्धलाई अतुलनीय दक्षताका साथ सामना गर्दछ। यसले कपडाको फाइबरमा गहिरो प्रवेश गर्छ, गाँठो हटाउँछ र तपाईंको लुगालाई उल्लेखनीय रूपमा सफा छोड्छ।', 'जिद्दी दागहरूलाई अलविदा भन्नुहोस्! हाम्रो डिटर्जेन्ट उन्नत दाग हटाउने टेक्नोलोजीसँग सुसज्जित छ जसले सबै भन्दा कठिन दागहरूलाई पनि लक्षित गर्दछ र मेटाउँछ, तपाईंको लुगा प्रत्येक नुहाइ पछि नयाँ जस्तै राम्रो देखिन्छ भनेर सुनिश्चित गर्दछ।', 'हाम्रो रंग-सुरक्षा सूत्रको साथ तपाईंको कपडाको जीवन्तता जोगाउनुहोस्। यो डिटर्जेन्ट रङको चमक कायम राख्दै कपडाहरूमा कोमल हुन्छ, त्यसैले तपाईंको मनपर्ने कपडाहरू समयसँगै ताजा र जीवन्त रहन्छन्।', 'तपाईँका कपडाहरू धोएपछि लामो समयसम्म रहने उत्साहजनक सुगन्धको आनन्द लिनुहोस्। हाम्रो डिटर्जेन्टले तपाईंको लुगा धुने समग्र सरसफाइलाई बढावा दिने सूक्ष्म स्फूर्तिदायी सुगन्ध छोड्छ।'], '20.00 ', 'इष्टतम सफाईको लागि प्रति लोड सिफारिस गरिएको रकम प्रयोग गर्नुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+    
+</div>
+
+<!-- Card 2 -->
+<div class="pcard">
+    <img src="a2.jpg" alt="Product 2" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप पिताम्बरी लिक्विड (1L)', 'a2.jpg', 'गाय छाप पिताम्बरी लिक्विड एक विशेष रूपमा शिल्पित तरल पदार्थ हो जसलाई काँसाका भाँडाहरूको चम्किलो उपस्थितिलाई कायाकल्प गर्न र कायम राख्न डिजाइन गरिएको हो। यो सफा गर्ने समाधानले सामान्यतया शक्तिशाली सफाई एजेन्टहरूलाई कोमल घर्षणहरूसँग जोड्दछ जसले धातुलाई क्षति नदिई धब्बा र ग्रिमलाई प्रभावकारी रूपमा हटाउन मद्दत गर्दछ। तरल लागू गर्न सजिलो छ, सुविधाजनक र प्रभावकारी सफाईको लागि अनुमति दिँदै।', ['तरलले प्रभावकारी रूपमा पीतलको सतहहरूमा धब्बा र अक्सिडेशनलाई लक्षित गर्दछ, धातुलाई मौलिक चमकलाई पुनर्स्थापित गर्दछ।', 'धेरै ब्रास क्लीनरहरूले हल्का घर्षणहरू समावेश गर्दछ जसले हटाउन मद्दत गर्दछ। जिद्दी दागहरू र पीतललाई नखोजिकन विलोपनको।', 'प्रयोगकर्ताहरूले झन्झटमुक्त र प्रयोगकर्ता-मैत्री सफाई प्रक्रिया सुनिश्चित गर्दै, नरम कपडा वा स्पन्ज प्रयोग गरेर तरल पदार्थ लागू गर्न सक्छन्।'], '100.00 ', 'बिस्तारै पीतलको सतहमा रगड्नुहोस्, धमिलो वा विकृति भएको क्षेत्रहरूमा ध्यान केन्द्रित गर्नुहोस्।')">
+    <div class="pdescription"><b>गाय छाप पिताम्बरी लिक्विड</b></div>
+    <div class="quantity"> मात्रा:<b>1 L</b></div>
+    <div class="price">100.00 NPR <span class="discount">(15% छुट )</span></div>
+    <div class="star-rating">★★★★☆</div>
+    <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप पिताम्बरी लिक्विड (1L)', 'a2.jpg', 'गाय छाप पिताम्बरी लिक्विड एक विशेष रूपमा शिल्पित तरल पदार्थ हो जसलाई काँसाका भाँडाहरूको चम्किलो उपस्थितिलाई कायाकल्प गर्न र कायम राख्न डिजाइन गरिएको हो। यो सफा गर्ने समाधानले सामान्यतया शक्तिशाली सफाई एजेन्टहरूलाई कोमल घर्षणहरूसँग जोड्दछ जसले धातुलाई क्षति नदिई धब्बा र ग्रिमलाई प्रभावकारी रूपमा हटाउन मद्दत गर्दछ। तरल लागू गर्न सजिलो छ, सुविधाजनक र प्रभावकारी सफाईको लागि अनुमति दिँदै।', ['तरलले प्रभावकारी रूपमा पीतलको सतहहरूमा धब्बा र अक्सिडेशनलाई लक्षित गर्दछ, धातुलाई मौलिक चमकलाई पुनर्स्थापित गर्दछ।', 'धेरै ब्रास क्लीनरहरूले हल्का घर्षणहरू समावेश गर्दछ जसले हटाउन मद्दत गर्दछ। जिद्दी दागहरू र पीतललाई नखोजिकन विलोपनको।', 'प्रयोगकर्ताहरूले झन्झटमुक्त र प्रयोगकर्ता-मैत्री सफाई प्रक्रिया सुनिश्चित गर्दै, नरम कपडा वा स्पन्ज प्रयोग गरेर तरल पदार्थ लागू गर्न सक्छन्।'], '100.00 ', 'बिस्तारै पीतलको सतहमा रगड्नुहोस्, धमिलो वा विकृति भएको क्षेत्रहरूमा ध्यान केन्द्रित गर्नुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+</div>
+
+<!-- Card 3 -->
+<div class="pcard">
+    <img src="a3.jpg" alt="Product 3" onclick="showDetails('प्रिमियम इको-फ्रेंडली डिस वास लिक्विड (1L)', 'a3.jpg', ' डिस वास लिक्विड, प्राय: डिश साबुन भनेर चिनिन्छ, यो एक आवश्यक घर सफा गर्ने उत्पादन हो जुन कुशलतापूर्वक ग्रीस, खाद्य अवशेषहरू, र भाँडा, भाँडाहरू र कुकवेयरबाट दागहरू हटाउन डिजाइन गरिएको हो। यो बहुमुखी सफाई समाधान हातमा कोमल रहँदा कडा गाँठो काट्ने प्रभावकारिताको लागि परिचित भान्साको मुख्य भाग हो। भाँडा धुने तरल पदार्थहरू विभिन्न ढाँचाहरूमा आउँछन्, जसले विभिन्न प्रकारका सुगन्धहरू र एन्टिब्याक्टेरियल गुणहरू जस्ता थप सुविधाहरू प्रदान गर्दछ।', ['भाँडा धुने तरल पदार्थहरू शक्तिशाली एजेन्टहरूद्वारा बनाइन्छ जसले ग्रीस र खानाका कणहरूलाई भत्काएर बाहिर निकाल्छ, राम्रोसँग सफाई सुनिश्चित गर्दछ।', 'धेरै डिश साबुनमा छालाको सुक्खापन र जलन रोक्नको लागि हल्का तत्वहरू समावेश हुन्छन्, तिनीहरूलाई पन्जा बिना नियमित प्रयोगको लागि उपयुक्त बनाउँदछ। , र प्यानहरू।'], '100.00 ', 'सतहहरू स्क्रब गर्न स्पन्ज वा डिश ब्रश प्रयोग गर्नुहोस्, जिद्दी अवशेष भएका क्षेत्रहरूमा थप ध्यान दिनुहोस्।')">
+    <div class="pdescription"><b>गाय छाप  डिस वास </b></div>
+    <div class="quantity"> मात्रा:<b>1 L</b></div>
+    <div class="price">100.00 NPR<span class="discount">(15% छुट )</span></div>
+    <div class="star-rating">★★★★☆</div>
+    <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली डिस वास लिक्विड (1L)', 'a3.jpg', ' डिस वास लिक्विड, प्राय: डिश साबुन भनेर चिनिन्छ, यो एक आवश्यक घर सफा गर्ने उत्पादन हो जुन कुशलतापूर्वक ग्रीस, खाद्य अवशेषहरू, र भाँडा, भाँडाहरू र कुकवेयरबाट दागहरू हटाउन डिजाइन गरिएको हो। यो बहुमुखी सफाई समाधान हातमा कोमल रहँदा कडा गाँठो काट्ने प्रभावकारिताको लागि परिचित भान्साको मुख्य भाग हो। भाँडा धुने तरल पदार्थहरू विभिन्न ढाँचाहरूमा आउँछन्, जसले विभिन्न प्रकारका सुगन्धहरू र एन्टिब्याक्टेरियल गुणहरू जस्ता थप सुविधाहरू प्रदान गर्दछ।', ['भाँडा धुने तरल पदार्थहरू शक्तिशाली एजेन्टहरूद्वारा बनाइन्छ जसले ग्रीस र खानाका कणहरूलाई भत्काएर बाहिर निकाल्छ, राम्रोसँग सफाई सुनिश्चित गर्दछ।', 'धेरै डिश साबुनमा छालाको सुक्खापन र जलन रोक्नको लागि हल्का तत्वहरू समावेश हुन्छन्, तिनीहरूलाई पन्जा बिना नियमित प्रयोगको लागि उपयुक्त बनाउँदछ। , र प्यानहरू।'], '100.00 ', 'सतहहरू स्क्रब गर्न स्पन्ज वा डिश ब्रश प्रयोग गर्नुहोस्, जिद्दी अवशेष भएका क्षेत्रहरूमा थप ध्यान दिनुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+</div>
+
+<!-- Card 4 -->
+<div class="pcard">
+    <img src="a4.jpg" alt="Product 4"  onclick="showDetails('प्रिमियम इको-फ्रेंडली साफी हैंडवास (250 ml)', 'a4.jpg', ' साफीहैंड वास प्रस्तुत गर्दै, दैनिक हातको सरसफाइको लागि विलासी र प्रभावकारी समाधान। हेरचाह संग बनाइएको, हाम्रो हात धुने एक स्पा जस्तै अनुभव संग आफ्नो हात सफा गर्न, पोषण गर्न र लिप्त बनाउन को लागी डिजाइन गरिएको छ।', ['हाम्रो सूत्रले एक धनी, मखमली फोम उत्पादन गर्दछ जुन तपाइँको हात माथि ग्लाइड गर्दछ, एक विलासी र प्रभावकारी सफाई अनुभव प्रदान गर्दछ। सुख्खापन पैदा नगरी।', 'मोइस्चराइजिंग एजेन्टहरूले समृद्ध, यो हात धुनेले तपाइँको छालालाई प्यारो बनाउँछ, प्रत्येक प्रयोग पछि यसलाई नरम र हाइड्रेटेड महसुस गराउँछ। सुक्खा हातको असुविधालाई अलविदा भन्नुहोस्।', 'तपाईंको छालाको प्राकृतिक pH सन्तुलन कायम राख्न सावधानीपूर्वक तयार गरिएको, हाम्रो हात धुने नियमित प्रयोगको लागि उपयुक्त छ, प्रत्येक नुहाउँदा एक कोमल र पौष्टिक स्पर्श सुनिश्चित गर्दै।'], '100.00 ', 'आफ्नो हातमा फोमिङ ह्यान्ड वाशको उदार मात्रा जारी गर्न पम्प थिच्नुहोस्।')">
+    <div class="pdescription"><b>साफी हैंडवास</b></div>
+    <div class="quantity"> मात्रा:<b>250 ML</b></div>
+    <div class="price">100.00 NPR <span class="discount">(15% छुट )</span></div>
+    <div class="star-rating">★★★★☆</div>
+    <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली साफी हैंडवास (250 ml)', 'a4.jpg', 'साफी हैंडवास प्रस्तुत गर्दै, दैनिक हातको सरसफाइको लागि विलासी र प्रभावकारी समाधान। हेरचाह संग बनाइएको, हाम्रो हात धुने एक स्पा जस्तै अनुभव संग आफ्नो हात सफा गर्न, पोषण गर्न र लिप्त बनाउन को लागी डिजाइन गरिएको छ।', ['हाम्रो सूत्रले एक धनी, मखमली फोम उत्पादन गर्दछ जुन तपाइँको हात माथि ग्लाइड गर्दछ, एक विलासी र प्रभावकारी सफाई अनुभव प्रदान गर्दछ। सुख्खापन पैदा नगरी।', 'मोइस्चराइजिंग एजेन्टहरूले समृद्ध, यो हात धुनेले तपाइँको छालालाई प्यारो बनाउँछ, प्रत्येक प्रयोग पछि यसलाई नरम र हाइड्रेटेड महसुस गराउँछ। सुक्खा हातको असुविधालाई अलविदा भन्नुहोस्।', 'तपाईंको छालाको प्राकृतिक pH सन्तुलन कायम राख्न सावधानीपूर्वक तयार गरिएको, हाम्रो हात धुने नियमित प्रयोगको लागि उपयुक्त छ, प्रत्येक नुहाउँदा एक कोमल र पौष्टिक स्पर्श सुनिश्चित गर्दै।'], '100.00 ', 'आफ्नो हातमा फोमिङ ह्यान्ड वाशको उदार मात्रा जारी गर्न पम्प थिच्नुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Details Popup -->
+<div class="details-popup" id="detailsPopup">
+    <div class="popup-content">
+        <div class="popup-header">
+            <h2 id="popupTitle"></h2>
+            <span class="close-popup" onclick="closePopup()">&times;</span>
+        </div>
+        <img id="popupImage" src="" alt="Product Image">
+        <p id="popupDescription"></p>
+        <h3>मुख्य विशेषताहरु:</h3>
+        <ul id="popupKeyFeatures"></ul>
+        <p id="popupPrice"></p>
+        <h3>प्रयोग निर्देश:</h3>
+        <p id="popupUsageInstructions"></p>
+        
+        <button class="button buy-now-btn" onclick="addToCart()">अहिले खरिद गर</button>
+        <button class="button cancel-btn" onclick="closePopup()">रद्द गर्नुहोस्</button>
+    </div>
+</div>
+ </section>
+ <!-- second row -->
+
+ <section id="msg2" >
+    <p>गाय छाप <b>डिटर्जेन्टहरू</b></p>
+    
+</section> 
+<!-- Rest of your website content goes here -->
+<section class="pdetail">
+
+
+<!-- Card 1 -->
+<div class="pcard">
+<img src="a1.jpg" alt="Product 1" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप डिटर्जेंट (500g)', 'a1.jpg', 'हाम्रो उन्नत  गाय छाप अल्ट्रा-क्लीन लाँड्री डिटर्जेन्ट प्रस्तुत गर्दै, तपाईंको लुगा धुने दिनचर्यामा क्रान्तिकारी परिवर्तन गर्न डिजाइन गरिएको पावरहाउस समाधान। अत्याधुनिक प्रविधिको साथ तयार गरिएको, यो डिटर्जेन्ट तपाईंको कपडाको हेरचाह गर्दा असाधारण सफाई प्रदर्शन प्रदान गर्न इन्जिनियर गरिएको छ।', ['हाम्रो डिटर्जेन्टले ट्रिपल-एक्शन सूत्र प्रयोग गर्दछ जसले दाग, फोहोर र गन्धलाई अतुलनीय दक्षताका साथ सामना गर्दछ। यसले कपडाको फाइबरमा गहिरो प्रवेश गर्छ, गाँठो हटाउँछ र तपाईंको लुगालाई उल्लेखनीय रूपमा सफा छोड्छ।', 'जिद्दी दागहरूलाई अलविदा भन्नुहोस्! हाम्रो डिटर्जेन्ट उन्नत दाग हटाउने टेक्नोलोजीसँग सुसज्जित छ जसले सबै भन्दा कठिन दागहरूलाई पनि लक्षित गर्दछ र मेटाउँछ, तपाईंको लुगा प्रत्येक नुहाइ पछि नयाँ जस्तै राम्रो देखिन्छ भनेर सुनिश्चित गर्दछ।', 'हाम्रो रंग-सुरक्षा सूत्रको साथ तपाईंको कपडाको जीवन्तता जोगाउनुहोस्। यो डिटर्जेन्ट रङको चमक कायम राख्दै कपडाहरूमा कोमल हुन्छ, त्यसैले तपाईंको मनपर्ने कपडाहरू समयसँगै ताजा र जीवन्त रहन्छन्।', 'तपाईँका कपडाहरू धोएपछि लामो समयसम्म रहने उत्साहजनक सुगन्धको आनन्द लिनुहोस्। हाम्रो डिटर्जेन्टले तपाईंको लुगा धुने समग्र सरसफाइलाई बढावा दिने सूक्ष्म स्फूर्तिदायी सुगन्ध छोड्छ।'], '60.00 ', 'इष्टतम सफाईको लागि प्रति लोड सिफारिस गरिएको रकम प्रयोग गर्नुहोस्।')">
+<div class="pdescription"><b> गाय छाप डिटर्जेंट</b></div>
+<div class="quantity"> मात्रा:<b> 500G</b></div>
+<div class="price">60.00 NPR<span class="discount">(15% छुट)</span></div>
+<div class="star-rating">★★★★☆</div>
+<button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप डिटर्जेंट (500g)', 'a1.jpg', 'हाम्रो उन्नत  गाय छाप अल्ट्रा-क्लीन लाँड्री डिटर्जेन्ट प्रस्तुत गर्दै, तपाईंको लुगा धुने दिनचर्यामा क्रान्तिकारी परिवर्तन गर्न डिजाइन गरिएको पावरहाउस समाधान। अत्याधुनिक प्रविधिको साथ तयार गरिएको, यो डिटर्जेन्ट तपाईंको कपडाको हेरचाह गर्दा असाधारण सफाई प्रदर्शन प्रदान गर्न इन्जिनियर गरिएको छ।', ['हाम्रो डिटर्जेन्टले ट्रिपल-एक्शन सूत्र प्रयोग गर्दछ जसले दाग, फोहोर र गन्धलाई अतुलनीय दक्षताका साथ सामना गर्दछ। यसले कपडाको फाइबरमा गहिरो प्रवेश गर्छ, गाँठो हटाउँछ र तपाईंको लुगालाई उल्लेखनीय रूपमा सफा छोड्छ।', 'जिद्दी दागहरूलाई अलविदा भन्नुहोस्! हाम्रो डिटर्जेन्ट उन्नत दाग हटाउने टेक्नोलोजीसँग सुसज्जित छ जसले सबै भन्दा कठिन दागहरूलाई पनि लक्षित गर्दछ र मेटाउँछ, तपाईंको लुगा प्रत्येक नुहाइ पछि नयाँ जस्तै राम्रो देखिन्छ भनेर सुनिश्चित गर्दछ।', 'हाम्रो रंग-सुरक्षा सूत्रको साथ तपाईंको कपडाको जीवन्तता जोगाउनुहोस्। यो डिटर्जेन्ट रङको चमक कायम राख्दै कपडाहरूमा कोमल हुन्छ, त्यसैले तपाईंको मनपर्ने कपडाहरू समयसँगै ताजा र जीवन्त रहन्छन्।', 'तपाईँका कपडाहरू धोएपछि लामो समयसम्म रहने उत्साहजनक सुगन्धको आनन्द लिनुहोस्। हाम्रो डिटर्जेन्टले तपाईंको लुगा धुने समग्र सरसफाइलाई बढावा दिने सूक्ष्म स्फूर्तिदायी सुगन्ध छोड्छ।'], '60.00 ', 'इष्टतम सफाईको लागि प्रति लोड सिफारिस गरिएको रकम प्रयोग गर्नुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+</div>
+
+<!-- Card 2 -->
+<div class="pcard">
+    <img src="a1.jpg" alt="Product 1" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप डिटर्जेंट (1KG)', 'a1.jpg', 'हाम्रो उन्नत  गाय छाप अल्ट्रा-क्लीन लाँड्री डिटर्जेन्ट प्रस्तुत गर्दै, तपाईंको लुगा धुने दिनचर्यामा क्रान्तिकारी परिवर्तन गर्न डिजाइन गरिएको पावरहाउस समाधान। अत्याधुनिक प्रविधिको साथ तयार गरिएको, यो डिटर्जेन्ट तपाईंको कपडाको हेरचाह गर्दा असाधारण सफाई प्रदर्शन प्रदान गर्न इन्जिनियर गरिएको छ।', ['हाम्रो डिटर्जेन्टले ट्रिपल-एक्शन सूत्र प्रयोग गर्दछ जसले दाग, फोहोर र गन्धलाई अतुलनीय दक्षताका साथ सामना गर्दछ। यसले कपडाको फाइबरमा गहिरो प्रवेश गर्छ, गाँठो हटाउँछ र तपाईंको लुगालाई उल्लेखनीय रूपमा सफा छोड्छ।', 'जिद्दी दागहरूलाई अलविदा भन्नुहोस्! हाम्रो डिटर्जेन्ट उन्नत दाग हटाउने टेक्नोलोजीसँग सुसज्जित छ जसले सबै भन्दा कठिन दागहरूलाई पनि लक्षित गर्दछ र मेटाउँछ, तपाईंको लुगा प्रत्येक नुहाइ पछि नयाँ जस्तै राम्रो देखिन्छ भनेर सुनिश्चित गर्दछ।', 'हाम्रो रंग-सुरक्षा सूत्रको साथ तपाईंको कपडाको जीवन्तता जोगाउनुहोस्। यो डिटर्जेन्ट रङको चमक कायम राख्दै कपडाहरूमा कोमल हुन्छ, त्यसैले तपाईंको मनपर्ने कपडाहरू समयसँगै ताजा र जीवन्त रहन्छन्।', 'तपाईँका कपडाहरू धोएपछि लामो समयसम्म रहने उत्साहजनक सुगन्धको आनन्द लिनुहोस्। हाम्रो डिटर्जेन्टले तपाईंको लुगा धुने समग्र सरसफाइलाई बढावा दिने सूक्ष्म स्फूर्तिदायी सुगन्ध छोड्छ।'], '100.00 ', 'इष्टतम सफाईको लागि प्रति लोड सिफारिस गरिएको रकम प्रयोग गर्नुहोस्।')">
+    <div class="pdescription"><b>गाय छाप डिटर्जेंट</b></div>
+    <div class="quantity">मात्रा:<b> 1KG</b></div>
+    <div class="price">100.00 NPR <span class="discount">(15% छुट )</span></div>
+    <div class="star-rating">★★★★☆</div>
+    <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप डिटर्जेंट (1KG)', 'a1.jpg', 'हाम्रो उन्नत  गाय छाप अल्ट्रा-क्लीन लाँड्री डिटर्जेन्ट प्रस्तुत गर्दै, तपाईंको लुगा धुने दिनचर्यामा क्रान्तिकारी परिवर्तन गर्न डिजाइन गरिएको पावरहाउस समाधान। अत्याधुनिक प्रविधिको साथ तयार गरिएको, यो डिटर्जेन्ट तपाईंको कपडाको हेरचाह गर्दा असाधारण सफाई प्रदर्शन प्रदान गर्न इन्जिनियर गरिएको छ।', ['हाम्रो डिटर्जेन्टले ट्रिपल-एक्शन सूत्र प्रयोग गर्दछ जसले दाग, फोहोर र गन्धलाई अतुलनीय दक्षताका साथ सामना गर्दछ। यसले कपडाको फाइबरमा गहिरो प्रवेश गर्छ, गाँठो हटाउँछ र तपाईंको लुगालाई उल्लेखनीय रूपमा सफा छोड्छ।', 'जिद्दी दागहरूलाई अलविदा भन्नुहोस्! हाम्रो डिटर्जेन्ट उन्नत दाग हटाउने टेक्नोलोजीसँग सुसज्जित छ जसले सबै भन्दा कठिन दागहरूलाई पनि लक्षित गर्दछ र मेटाउँछ, तपाईंको लुगा प्रत्येक नुहाइ पछि नयाँ जस्तै राम्रो देखिन्छ भनेर सुनिश्चित गर्दछ।', 'हाम्रो रंग-सुरक्षा सूत्रको साथ तपाईंको कपडाको जीवन्तता जोगाउनुहोस्। यो डिटर्जेन्ट रङको चमक कायम राख्दै कपडाहरूमा कोमल हुन्छ, त्यसैले तपाईंको मनपर्ने कपडाहरू समयसँगै ताजा र जीवन्त रहन्छन्।', 'तपाईँका कपडाहरू धोएपछि लामो समयसम्म रहने उत्साहजनक सुगन्धको आनन्द लिनुहोस्। हाम्रो डिटर्जेन्टले तपाईंको लुगा धुने समग्र सरसफाइलाई बढावा दिने सूक्ष्म स्फूर्तिदायी सुगन्ध छोड्छ।'], '100.00 ', 'इष्टतम सफाईको लागि प्रति लोड सिफारिस गरिएको रकम प्रयोग गर्नुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+    </div>
+
+<!-- Card 3 -->
+<div class="pcard">
+    <img src="a11.jpg" alt="Product 1" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप डिटर्जेंट (3KG)', 'a11.jpg', 'हाम्रो उन्नत  गाय छाप अल्ट्रा-क्लीन लाँड्री डिटर्जेन्ट प्रस्तुत गर्दै, तपाईंको लुगा धुने दिनचर्यामा क्रान्तिकारी परिवर्तन गर्न डिजाइन गरिएको पावरहाउस समाधान। अत्याधुनिक प्रविधिको साथ तयार गरिएको, यो डिटर्जेन्ट तपाईंको कपडाको हेरचाह गर्दा असाधारण सफाई प्रदर्शन प्रदान गर्न इन्जिनियर गरिएको छ।', ['हाम्रो डिटर्जेन्टले ट्रिपल-एक्शन सूत्र प्रयोग गर्दछ जसले दाग, फोहोर र गन्धलाई अतुलनीय दक्षताका साथ सामना गर्दछ। यसले कपडाको फाइबरमा गहिरो प्रवेश गर्छ, गाँठो हटाउँछ र तपाईंको लुगालाई उल्लेखनीय रूपमा सफा छोड्छ।', 'जिद्दी दागहरूलाई अलविदा भन्नुहोस्! हाम्रो डिटर्जेन्ट उन्नत दाग हटाउने टेक्नोलोजीसँग सुसज्जित छ जसले सबै भन्दा कठिन दागहरूलाई पनि लक्षित गर्दछ र मेटाउँछ, तपाईंको लुगा प्रत्येक नुहाइ पछि नयाँ जस्तै राम्रो देखिन्छ भनेर सुनिश्चित गर्दछ।', 'हाम्रो रंग-सुरक्षा सूत्रको साथ तपाईंको कपडाको जीवन्तता जोगाउनुहोस्। यो डिटर्जेन्ट रङको चमक कायम राख्दै कपडाहरूमा कोमल हुन्छ, त्यसैले तपाईंको मनपर्ने कपडाहरू समयसँगै ताजा र जीवन्त रहन्छन्।', 'तपाईँका कपडाहरू धोएपछि लामो समयसम्म रहने उत्साहजनक सुगन्धको आनन्द लिनुहोस्। हाम्रो डिटर्जेन्टले तपाईंको लुगा धुने समग्र सरसफाइलाई बढावा दिने सूक्ष्म स्फूर्तिदायी सुगन्ध छोड्छ।'], '300.00 ', 'इष्टतम सफाईको लागि प्रति लोड सिफारिस गरिएको रकम प्रयोग गर्नुहोस्।')">
+    <div class="pdescription"><b>गाय छाप डिटर्जेंट</b></div>
+    <div class="quantity">मात्रा::<b>3KG</b></div>
+    <div class="price">300.00 NPR <span class="discount">(15% छुट )</span></div>
+    <div class="star-rating">★★★★☆</div>
+    <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप डिटर्जेंट (3KG)', 'a11.jpg', 'हाम्रो उन्नत  गाय छाप अल्ट्रा-क्लीन लाँड्री डिटर्जेन्ट प्रस्तुत गर्दै, तपाईंको लुगा धुने दिनचर्यामा क्रान्तिकारी परिवर्तन गर्न डिजाइन गरिएको पावरहाउस समाधान। अत्याधुनिक प्रविधिको साथ तयार गरिएको, यो डिटर्जेन्ट तपाईंको कपडाको हेरचाह गर्दा असाधारण सफाई प्रदर्शन प्रदान गर्न इन्जिनियर गरिएको छ।', ['हाम्रो डिटर्जेन्टले ट्रिपल-एक्शन सूत्र प्रयोग गर्दछ जसले दाग, फोहोर र गन्धलाई अतुलनीय दक्षताका साथ सामना गर्दछ। यसले कपडाको फाइबरमा गहिरो प्रवेश गर्छ, गाँठो हटाउँछ र तपाईंको लुगालाई उल्लेखनीय रूपमा सफा छोड्छ।', 'जिद्दी दागहरूलाई अलविदा भन्नुहोस्! हाम्रो डिटर्जेन्ट उन्नत दाग हटाउने टेक्नोलोजीसँग सुसज्जित छ जसले सबै भन्दा कठिन दागहरूलाई पनि लक्षित गर्दछ र मेटाउँछ, तपाईंको लुगा प्रत्येक नुहाइ पछि नयाँ जस्तै राम्रो देखिन्छ भनेर सुनिश्चित गर्दछ।', 'हाम्रो रंग-सुरक्षा सूत्रको साथ तपाईंको कपडाको जीवन्तता जोगाउनुहोस्। यो डिटर्जेन्ट रङको चमक कायम राख्दै कपडाहरूमा कोमल हुन्छ, त्यसैले तपाईंको मनपर्ने कपडाहरू समयसँगै ताजा र जीवन्त रहन्छन्।', 'तपाईँका कपडाहरू धोएपछि लामो समयसम्म रहने उत्साहजनक सुगन्धको आनन्द लिनुहोस्। हाम्रो डिटर्जेन्टले तपाईंको लुगा धुने समग्र सरसफाइलाई बढावा दिने सूक्ष्म स्फूर्तिदायी सुगन्ध छोड्छ।'], '300.00 ', 'इष्टतम सफाईको लागि प्रति लोड सिफारिस गरिएको रकम प्रयोग गर्नुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+    </div>
+
+<!-- Card 4 -->
+<div class="pcard">
+    <img src="a12.jpg" alt="Product 1" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप डिटर्जेंट (5KG)', 'a12.jpg', 'हाम्रो उन्नत  गाय छाप अल्ट्रा-क्लीन लाँड्री डिटर्जेन्ट प्रस्तुत गर्दै, तपाईंको लुगा धुने दिनचर्यामा क्रान्तिकारी परिवर्तन गर्न डिजाइन गरिएको पावरहाउस समाधान। अत्याधुनिक प्रविधिको साथ तयार गरिएको, यो डिटर्जेन्ट तपाईंको कपडाको हेरचाह गर्दा असाधारण सफाई प्रदर्शन प्रदान गर्न इन्जिनियर गरिएको छ।', ['हाम्रो डिटर्जेन्टले ट्रिपल-एक्शन सूत्र प्रयोग गर्दछ जसले दाग, फोहोर र गन्धलाई अतुलनीय दक्षताका साथ सामना गर्दछ। यसले कपडाको फाइबरमा गहिरो प्रवेश गर्छ, गाँठो हटाउँछ र तपाईंको लुगालाई उल्लेखनीय रूपमा सफा छोड्छ।', 'जिद्दी दागहरूलाई अलविदा भन्नुहोस्! हाम्रो डिटर्जेन्ट उन्नत दाग हटाउने टेक्नोलोजीसँग सुसज्जित छ जसले सबै भन्दा कठिन दागहरूलाई पनि लक्षित गर्दछ र मेटाउँछ, तपाईंको लुगा प्रत्येक नुहाइ पछि नयाँ जस्तै राम्रो देखिन्छ भनेर सुनिश्चित गर्दछ।', 'हाम्रो रंग-सुरक्षा सूत्रको साथ तपाईंको कपडाको जीवन्तता जोगाउनुहोस्। यो डिटर्जेन्ट रङको चमक कायम राख्दै कपडाहरूमा कोमल हुन्छ, त्यसैले तपाईंको मनपर्ने कपडाहरू समयसँगै ताजा र जीवन्त रहन्छन्।', 'तपाईँका कपडाहरू धोएपछि लामो समयसम्म रहने उत्साहजनक सुगन्धको आनन्द लिनुहोस्। हाम्रो डिटर्जेन्टले तपाईंको लुगा धुने समग्र सरसफाइलाई बढावा दिने सूक्ष्म स्फूर्तिदायी सुगन्ध छोड्छ।'], '500.00 ', 'इष्टतम सफाईको लागि प्रति लोड सिफारिस गरिएको रकम प्रयोग गर्नुहोस्।')">
+    <div class="pdescription"><b>गाय छाप डिटर्जेंट</b></div>
+    <div class="quantity">मात्रा:<b> 5KG</b></div>
+    <div class="price">500.00 NPR <span class="discount">(15% छुट )</span></div>
+    <div class="star-rating">★★★★☆</div>
+    <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप डिटर्जेंट (5KG)', 'a12.jpg', 'हाम्रो उन्नत  गाय छाप अल्ट्रा-क्लीन लाँड्री डिटर्जेन्ट प्रस्तुत गर्दै, तपाईंको लुगा धुने दिनचर्यामा क्रान्तिकारी परिवर्तन गर्न डिजाइन गरिएको पावरहाउस समाधान। अत्याधुनिक प्रविधिको साथ तयार गरिएको, यो डिटर्जेन्ट तपाईंको कपडाको हेरचाह गर्दा असाधारण सफाई प्रदर्शन प्रदान गर्न इन्जिनियर गरिएको छ।', ['हाम्रो डिटर्जेन्टले ट्रिपल-एक्शन सूत्र प्रयोग गर्दछ जसले दाग, फोहोर र गन्धलाई अतुलनीय दक्षताका साथ सामना गर्दछ। यसले कपडाको फाइबरमा गहिरो प्रवेश गर्छ, गाँठो हटाउँछ र तपाईंको लुगालाई उल्लेखनीय रूपमा सफा छोड्छ।', 'जिद्दी दागहरूलाई अलविदा भन्नुहोस्! हाम्रो डिटर्जेन्ट उन्नत दाग हटाउने टेक्नोलोजीसँग सुसज्जित छ जसले सबै भन्दा कठिन दागहरूलाई पनि लक्षित गर्दछ र मेटाउँछ, तपाईंको लुगा प्रत्येक नुहाइ पछि नयाँ जस्तै राम्रो देखिन्छ भनेर सुनिश्चित गर्दछ।', 'हाम्रो रंग-सुरक्षा सूत्रको साथ तपाईंको कपडाको जीवन्तता जोगाउनुहोस्। यो डिटर्जेन्ट रङको चमक कायम राख्दै कपडाहरूमा कोमल हुन्छ, त्यसैले तपाईंको मनपर्ने कपडाहरू समयसँगै ताजा र जीवन्त रहन्छन्।', 'तपाईँका कपडाहरू धोएपछि लामो समयसम्म रहने उत्साहजनक सुगन्धको आनन्द लिनुहोस्। हाम्रो डिटर्जेन्टले तपाईंको लुगा धुने समग्र सरसफाइलाई बढावा दिने सूक्ष्म स्फूर्तिदायी सुगन्ध छोड्छ।'], '500.00 ', 'इष्टतम सफाईको लागि प्रति लोड सिफारिस गरिएको रकम प्रयोग गर्नुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+    </div>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Details Popup -->
+<div class="details-popup" id="detailsPopup">
+<div class="popup-content">
+    <div class="popup-header">
+        <h2 id="popupTitle"></h2>
+        <span class="close-popup" onclick="closePopup()">&times;</span>
+    </div>
+    <img id="popupImage" src="" alt="Product Image">
+    <p id="popupDescription"></p>
+    <h3>मुख्य विशेषताहरु:</h3>
+    <ul id="popupKeyFeatures"></ul>
+    <p id="popupPrice"></p>
+    <h3>प्रयोग निर्देश:</h3>
+    <p id="popupUsageInstructions"></p>
+    
+    <button class="button buy-now-btn" onclick="addToCart()">अहिले खरिद गर</button>
+    <button class="button cancel-btn" onclick="closePopup()">रद्द गर्नुहोस्</button>
+</div>
+</div>
+</section>
+<!-- THIRD ROW-->
+<section id="msg2" >
+    <p>सफाई <b>लिक्विड</b></p>
+    
+</section> 
+<!-- Rest of your website content goes here -->
+<section class="pdetail">
+
+
+<!-- Card 1 -->
+<div class="pcard">
+<img src="a5.jpg" alt="Product 1" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप कीट निवारक (1L)', 'a5.jpg', 'गाय छाप कीट निवारक प्रस्तुत गर्दै, अनावश्यक कीराहरू विरुद्ध तपाईंको भरपर्दो रक्षा। हाम्रो शक्तिशाली र प्रभावकारी सूत्र कीराहरू हटाउन र तपाईंको ठाउँमा कीराहरू-मुक्त राख्न डिजाइन गरिएको हो। ', ['प्राकृतिक सामग्रीको शक्ति प्रयोग गर्दै, हाम्रो कीट निवारक एक गैर-विषाक्त समाधान हो जसले हानिकारक रसायनहरू बिना कीराहरूलाई प्रभावकारी रूपमा खाडीमा राख्छ।', 'इनडोर र बाहिरी दुवै प्रयोगको लागि आदर्श, हाम्रो निवारक विभिन्न प्रकारका बिरूद्ध बहुमुखी सुरक्षा प्रदान गर्दछ। कीराहरू, तपाईंलाई आवश्यक पर्ने ठाउँमा बग-मुक्त क्षेत्र सुनिश्चित गर्दै।', 'हाम्रो रंग-सुरक्षा सूत्रको साथ तपाईंको लुगाको जीवन्तता जोगाउनुहोस्। यो डिटर्जेन्ट रङको चमक कायम राख्दै कपडाहरूमा कोमल हुन्छ, त्यसैले तपाईंको मनपर्ने कपडाहरू समयसँगै ताजा र जीवन्त रहन्छन्।', 'प्रयोगकर्ता-अनुकूल स्प्रे वा अनुप्रयोग विधिले सजिलो र लक्षित प्रयोगको लागि अनुमति दिन्छ। यसलाई विशेष क्षेत्रहरूमा लागू गर्नुहोस् वा कीराहरूलाई तपाईंको ठाउँमा प्रवेश गर्नबाट रोक्नको लागि अवरोध सिर्जना गर्नुहोस्।'], '160.00 ', 'प्रत्येक प्रयोग गर्नु अघि, निवारक सूत्रको समान वितरण सुनिश्चित गर्न उत्पादनलाई राम्रोसँग हल्लाउनुहोस्।')">
+<div class="pdescription"><b>गाय छाप कीट निवारक </b></div>
+<div class="quantity">मात्रा:<b> 1L</b></div>
+<div class="price">160.00 NPR <span class="discount">(15% छुट )</span></div>
+<div class="star-rating">★★★★☆</div>
+<button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप कीट निवारक (1L)', 'a5.jpg', 'गाय छाप कीट निवारक प्रस्तुत गर्दै, अनावश्यक कीराहरू विरुद्ध तपाईंको भरपर्दो रक्षा। हाम्रो शक्तिशाली र प्रभावकारी सूत्र कीराहरू हटाउन र तपाईंको ठाउँमा कीराहरू-मुक्त राख्न डिजाइन गरिएको हो। ', ['प्राकृतिक सामग्रीको शक्ति प्रयोग गर्दै, हाम्रो कीट निवारक एक गैर-विषाक्त समाधान हो जसले हानिकारक रसायनहरू बिना कीराहरूलाई प्रभावकारी रूपमा खाडीमा राख्छ।', 'इनडोर र बाहिरी दुवै प्रयोगको लागि आदर्श, हाम्रो निवारक विभिन्न प्रकारका बिरूद्ध बहुमुखी सुरक्षा प्रदान गर्दछ। कीराहरू, तपाईंलाई आवश्यक पर्ने ठाउँमा बग-मुक्त क्षेत्र सुनिश्चित गर्दै।', 'हाम्रो रंग-सुरक्षा सूत्रको साथ तपाईंको लुगाको जीवन्तता जोगाउनुहोस्। यो डिटर्जेन्ट रङको चमक कायम राख्दै कपडाहरूमा कोमल हुन्छ, त्यसैले तपाईंको मनपर्ने कपडाहरू समयसँगै ताजा र जीवन्त रहन्छन्।', 'प्रयोगकर्ता-अनुकूल स्प्रे वा अनुप्रयोग विधिले सजिलो र लक्षित प्रयोगको लागि अनुमति दिन्छ। यसलाई विशेष क्षेत्रहरूमा लागू गर्नुहोस् वा कीराहरूलाई तपाईंको ठाउँमा प्रवेश गर्नबाट रोक्नको लागि अवरोध सिर्जना गर्नुहोस्।'], '160.00 ', 'प्रत्येक प्रयोग गर्नु अघि, निवारक सूत्रको समान वितरण सुनिश्चित गर्न उत्पादनलाई राम्रोसँग हल्लाउनुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+</div>
+
+<!-- Card 2 -->
+<div class="pcard">
+<img src="a6.jpg" alt="Product 2" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप फिनायल (1L)', 'a6.jpg', 'गाय छाप फिनायल प्रस्तुत गर्दै, तपाईंको घर सफा गर्ने दिनचर्यालाई माथि उठाउनको लागि एक शक्तिशाली र बहुमुखी समाधान। हाम्रो विशेष रूपले तयार गरिएको फिनाइललाई फोहोर, कीटाणु र अप्रिय गन्धलाई प्रभावकारी रूपमा सम्बोधन गर्न डिजाइन गरिएको हो।', ['हाम्रो क्लिनिङ फिनाईल शक्तिशाली तत्वहरूले भरिएको छ जसले कडा दाग र ग्रिमलाई छिर्न र विघटन गर्दछ, तपाईंको भुइँ र सतहहरू दागरहित रूपमा सफा राख्छ।', 'फर्म्युलेटेड। किटाणु र ब्याक्टेरियाको फराकिलो स्पेक्ट्रम हटाउन, तपाईं र तपाईंको परिवारको लागि स्वच्छ वातावरण सुनिश्चित गर्दै।', 'फ्लोर, टाइल्स र काउन्टरटपहरू सहित विभिन्न सतहहरूको लागि उपयुक्त। बहुमुखी प्रतिभा तपाईंको सबै सफाई आवश्यकताहरू प्रभावकारी रूपमा सम्बोधन गर्न कुञ्जी हो।'], '100.00 ', 'सफा गर्ने फिनाईललाई सिफारिस गरिएको अनुपात अनुसार पातलो गर्नुहोस्। सामान्यतया, इष्टतम प्रभावकारिता को लागी एक सानो मात्रा पानी संग मिश्रित छ।')">
+
+<div class="pdescription"><b>गाय छाप फिनायल</b></div>
+<div class="quantity">मात्रा:<b> 1L</b></div>
+<div class="price">100.00 NPR <span class="discount">(15% छुट )</span></div>
+<div class="star-rating">★★★★☆</div>
+
+
+<button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप फिनायल (1L)', 'a6.jpg', 'गाय छाप फिनायल प्रस्तुत गर्दै, तपाईंको घर सफा गर्ने दिनचर्यालाई माथि उठाउनको लागि एक शक्तिशाली र बहुमुखी समाधान। हाम्रो विशेष रूपले तयार गरिएको फिनाइललाई फोहोर, कीटाणु र अप्रिय गन्धलाई प्रभावकारी रूपमा सम्बोधन गर्न डिजाइन गरिएको हो।', ['हाम्रो क्लिनिङ फिनाईल शक्तिशाली तत्वहरूले भरिएको छ जसले कडा दाग र ग्रिमलाई छिर्न र विघटन गर्दछ, तपाईंको भुइँ र सतहहरू दागरहित रूपमा सफा राख्छ।', 'फर्म्युलेटेड। किटाणु र ब्याक्टेरियाको फराकिलो स्पेक्ट्रम हटाउन, तपाईं र तपाईंको परिवारको लागि स्वच्छ वातावरण सुनिश्चित गर्दै।', 'फ्लोर, टाइल्स र काउन्टरटपहरू सहित विभिन्न सतहहरूको लागि उपयुक्त। बहुमुखी प्रतिभा तपाईंको सबै सफाई आवश्यकताहरू प्रभावकारी रूपमा सम्बोधन गर्न कुञ्जी हो।'], '100.00 ', 'सफा गर्ने फिनाईललाई सिफारिस गरिएको अनुपात अनुसार पातलो गर्नुहोस्। सामान्यतया, इष्टतम प्रभावकारिता को लागी एक सानो मात्रा पानी संग मिश्रित छ।')">विवरणहरू जाँच गर्नुहोस्</button>
+</div>
+
+<!-- Card 3 -->
+<div class="pcard">
+<img src="a9.jpg" alt="Product 3"  onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप फिनाइल सुगन्धको साथ (1L)', 'a9.jpg', 'गाय छाप फिनाइल गजबको सुगन्धको साथ प्रस्तुत गर्दै, एक गतिशील सफाई समाधान जसले फोहोर र कीटाणुहरूलाई मात्र उन्मूलन गर्दैन तर तपाईंको घरलाई ताजा गन्ध पनि छोड्छ। ', [' आफ्नो परिवेशलाई रमाइलो र दीर्घकालीन ताजा सुगन्धमा डुबाउनुहोस्। स्फूर्तिदायी सुगन्धले तपाईंको घरलाई सरसफाईको आश्रयस्थलमा परिणत गरिरहन्छ।', 'विस्तृत किसिमको कीटाणु र ब्याक्टेरियासँग लड्न डिजाइन गरिएको यो क्लिनिङ फिनाईलले पूर्ण र स्वच्छ सफा प्रदान गर्दछ जसले स्वस्थ बस्ने ठाउँमा योगदान पुर्‍याउँछ।', 'हाम्रो विशेष ढाँचामा रहेको फिनाईलले विभिन्न सतहहरूबाट कडा दाग र ग्रिमलाई सहजै हटाएर, दागरहित वातावरण सुनिश्चित गर्दै शक्तिशाली सफाई कार्यको गर्व गर्दछ।'], '100.00 ', ' सफा गर्ने फिनाईललाई सिफारिस गरिएको अनुपात अनुसार पातलो गर्नुहोस्। सामान्यतया, इष्टतम प्रभावकारिता को लागी एक सानो मात्रा पानी संग मिश्रित छ।')">
+<div class="pdescription"><b>गाय छाप फिनाइल सुगन्धको साथ</b></div>
+<div class="quantity">मात्रा:<b> 1L</b></div>
+<div class="price">100.00 NPR<span class="discount">(15% छुट )</span></div>
+<div class="star-rating">★★★★☆</div>
+<button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप फिनाइल सुगन्धको साथ (1L)', 'a9.jpg', 'गाय छाप फिनाइल गजबको सुगन्धको साथ प्रस्तुत गर्दै, एक गतिशील सफाई समाधान जसले फोहोर र कीटाणुहरूलाई मात्र उन्मूलन गर्दैन तर तपाईंको घरलाई ताजा गन्ध पनि छोड्छ। ', [' आफ्नो परिवेशलाई रमाइलो र दीर्घकालीन ताजा सुगन्धमा डुबाउनुहोस्। स्फूर्तिदायी सुगन्धले तपाईंको घरलाई सरसफाईको आश्रयस्थलमा परिणत गरिरहन्छ।', 'विस्तृत किसिमको कीटाणु र ब्याक्टेरियासँग लड्न डिजाइन गरिएको यो क्लिनिङ फिनाईलले पूर्ण र स्वच्छ सफा प्रदान गर्दछ जसले स्वस्थ बस्ने ठाउँमा योगदान पुर्‍याउँछ।', 'हाम्रो विशेष ढाँचामा रहेको फिनाईलले विभिन्न सतहहरूबाट कडा दाग र ग्रिमलाई सहजै हटाएर, दागरहित वातावरण सुनिश्चित गर्दै शक्तिशाली सफाई कार्यको गर्व गर्दछ।'], '100.00 ', ' सफा गर्ने फिनाईललाई सिफारिस गरिएको अनुपात अनुसार पातलो गर्नुहोस्। सामान्यतया, इष्टतम प्रभावकारिता को लागी एक सानो मात्रा पानी संग मिश्रित छ।')">विवरणहरू जाँच गर्नुहोस्</button>
+</div>
+
+<!-- Card 4 -->
+<div class="pcard">
+<img src="a8.jpg" alt="Product 4" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप रेड एसिड टॉयलेट क्लीनर (1L)', 'a8.jpg', 'रेड एसिड ट्वाइलेट क्लिनर शौचालयको भाँडोमा सरसफाई र स्वच्छता कायम राख्न डिजाइन गरिएको एक विशेष सफाई समाधान हो। यो बहुमुखी उत्पादन तरल रूपमा आउँछ, यसलाई लागू गर्न सजिलो बनाउँछ र प्रभावकारी सफाईको लागि पूर्ण कभरेज सुनिश्चित गर्दछ। शक्तिशाली क्लिनिङ एजेन्टहरूसँग तयार पारिएको, तरल शौचालय क्लीनरहरू दाग, कीटाणुहरू र अप्रिय गन्धहरू हटाउनका लागि बनाइन्छ, शौचालयको कचौरालाई ताजा र सेनिटाइज राख्छ।', ['रेड एसिड ट्वाइलेट क्लीनरहरूलाई लक्षित गरी कडा दागहरू हटाउन ईन्जिनियर गरिएको छ, जसमा चूना स्केल, खिया, र सामान्यतया शौचालयको भाँडोमा पाइने अन्य निक्षेपहरू समावेश छन्।', 'धेरै ढाँचाहरूमा कीटाणुनाशक गुणहरू समावेश हुन्छन् जसले ब्याक्टेरिया र कीटाणुहरूलाई प्रभावकारी रूपमा मार्छ, स्वच्छ बाथरूम वातावरणमा योगदान पुर्‍याउँछ।' , 'रेड एसिड ट्वाइलेट क्लीनरहरूले अक्सर म्यानुअल स्क्रबिङ र मर्मतसम्भारको फ्रिक्वेन्सी घटाएर दिगो सफा प्रदान गर्छन्।'], '130.00 ', 'निर्माताको निर्देशन र सुरक्षा दिशानिर्देशहरू पालना गर्नुहोस्।')">
+<div class="pdescription"><b>गाय छाप रेड एसिड टॉयलेट क्लीनर</b></div>
+<div class="quantity">मात्रा:<b> 1L</b></div>
+<div class="price">130.00 NPR <span class="discount">(15% छुट )</span></div>
+<div class="star-rating">★★★★☆</div>
+<button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप रेड एसिड टॉयलेट क्लीनर (1L)', 'a8.jpg', 'रेड एसिड ट्वाइलेट क्लिनर शौचालयको भाँडोमा सरसफाई र स्वच्छता कायम राख्न डिजाइन गरिएको एक विशेष सफाई समाधान हो। यो बहुमुखी उत्पादन तरल रूपमा आउँछ, यसलाई लागू गर्न सजिलो बनाउँछ र प्रभावकारी सफाईको लागि पूर्ण कभरेज सुनिश्चित गर्दछ। शक्तिशाली क्लिनिङ एजेन्टहरूसँग तयार पारिएको, तरल शौचालय क्लीनरहरू दाग, कीटाणुहरू र अप्रिय गन्धहरू हटाउनका लागि बनाइन्छ, शौचालयको कचौरालाई ताजा र सेनिटाइज राख्छ।', ['रेड एसिड ट्वाइलेट क्लीनरहरूलाई लक्षित गरी कडा दागहरू हटाउन ईन्जिनियर गरिएको छ, जसमा चूना स्केल, खिया, र सामान्यतया शौचालयको भाँडोमा पाइने अन्य निक्षेपहरू समावेश छन्।', 'धेरै ढाँचाहरूमा कीटाणुनाशक गुणहरू समावेश हुन्छन् जसले ब्याक्टेरिया र कीटाणुहरूलाई प्रभावकारी रूपमा मार्छ, स्वच्छ बाथरूम वातावरणमा योगदान पुर्‍याउँछ।' , 'रेड एसिड ट्वाइलेट क्लीनरहरूले अक्सर म्यानुअल स्क्रबिङ र मर्मतसम्भारको फ्रिक्वेन्सी घटाएर दिगो सफा प्रदान गर्छन्।'], '130.00 ', 'निर्माताको निर्देशन र सुरक्षा दिशानिर्देशहरू पालना गर्नुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+</div>
+
+
+<!-- Card 1 -->
+<div class="pcard">
+    <img src="a7.jpg" alt="Product 4" onclick="showDetails('प्रिमियम इको-फ्रेन्डली गाय छाप ग्लास क्लीनर (1L)', 'a7.jpg', ' गाय छाप ग्लास क्लीनर प्रस्तुत गर्दै, स्ट्रीक-फ्री स्पार्कलिंग विन्डोज र गिलास सतहहरू प्राप्त गर्न प्रिमियम समाधान। ', [' हाम्रो उन्नत सूत्रले तपाईंको गिलासको सतहहरूलाई स्पष्टताका साथ चम्किरहेको र तपाईंको ठाउँको समग्र सौन्दर्यतालाई बढाउँदै स्ट्रीक-मुक्त फिनिश सुनिश्चित गर्छ।', 'औँठाछाप, धब्बा र फोहोरलाई अलविदा भन्नुहोस्। हाम्रो गिलास क्लीनर सजिलैसँग घुल्न र गाँठो हटाउनको लागि तयार गरिएको छ, तपाईंको गिलास सतहहरूको वास्तविक पारदर्शिता प्रकट गर्दै। हाम्रो क्लीनर काँचको सतहहरूको विस्तृत श्रृंखलाको लागि डिजाइन गरिएको हो, हरेक पटक लगातार र असाधारण परिणामहरू प्रदान गर्दछ।'], '140.00 ', ' सुनिश्चित गर्नुहोस् कि गिलासको सतह अत्यधिक धुलो वा फोहोरबाट मुक्त छ। यदि गहिरो फोहोर छ भने, गिलास क्लीनर लागू गर्नु अघि सुक्खा कपडाले खुकुलो कणहरू सफा गर्ने विचार गर्नुहोस्।')">
+    <div class="pdescription"><b>गाय छाप ग्लास क्लीनर</b></div>
+    <div class="quantity">मात्रा:<b> 1L</b></div>
+    <div class="price">140.00 NPR <span class="discount">(15% छुट )</span></div>
+    <div class="star-rating">★★★★☆</div>
+    <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेन्डली गाय छाप ग्लास क्लीनर (1L)', 'a7.jpg', 'गाय छाप ग्लास क्लीनर प्रस्तुत गर्दै, स्ट्रीक-फ्री स्पार्कलिंग विन्डोज र गिलास सतहहरू प्राप्त गर्न प्रिमियम समाधान। ', [' हाम्रो उन्नत सूत्रले तपाईंको गिलासको सतहहरूलाई स्पष्टताका साथ चम्किरहेको र तपाईंको ठाउँको समग्र सौन्दर्यतालाई बढाउँदै स्ट्रीक-मुक्त फिनिश सुनिश्चित गर्छ।', 'औँठाछाप, धब्बा र फोहोरलाई अलविदा भन्नुहोस्। हाम्रो गिलास क्लीनर सजिलैसँग घुल्न र गाँठो हटाउनको लागि तयार गरिएको छ, तपाईंको गिलास सतहहरूको वास्तविक पारदर्शिता प्रकट गर्दै। हाम्रो क्लीनर काँचको सतहहरूको विस्तृत श्रृंखलाको लागि डिजाइन गरिएको हो, हरेक पटक लगातार र असाधारण परिणामहरू प्रदान गर्दछ।'], '140.00 ', 'सुनिश्चित गर्नुहोस् कि गिलासको सतह अत्यधिक धुलो वा फोहोरबाट मुक्त छ। यदि गहिरो फोहोर छ भने, गिलास क्लीनर लागू गर्नु अघि सुक्खा कपडाले खुकुलो कणहरू सफा गर्ने विचार गर्नुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+    </div>
+    <!-- Card 2 -->
+    <div class="pcard">
+        <img src="a4.jpg" alt="Product 4"  onclick="showDetails('प्रिमियम इको-फ्रेन्डली साफी हैंडवास (250ml)', 'a4.jpg', 'साफी हैंडवास प्रस्तुत गर्दै, दैनिक हातको सरसफाइको लागि विलासी र प्रभावकारी समाधान। हेरचाह संग बनाइएको, हाम्रो हात धुने एक स्पा जस्तै अनुभव संग आफ्नो हात सफा गर्न, पोषण गर्न र लिप्त बनाउन को लागी डिजाइन गरिएको छ।', ['हाम्रो सूत्रले एक धनी, मखमली फोम उत्पादन गर्दछ जुन तपाइँको हात माथि ग्लाइड गर्दछ, एक विलासी र प्रभावकारी सफाई अनुभव प्रदान गर्दछ। सुख्खापन पैदा नगरी।', 'मोइस्चराइजिंग एजेन्टहरूले समृद्ध, यो हात धुनेले तपाइँको छालालाई प्यारो बनाउँछ, प्रत्येक प्रयोग पछि यसलाई नरम र हाइड्रेटेड महसुस गराउँछ। सुक्खा हातको असुविधालाई अलविदा भन्नुहोस्।', 'तपाईंको छालाको प्राकृतिक pH सन्तुलन कायम राख्न सावधानीपूर्वक तयार गरिएको, हाम्रो हात धुने नियमित प्रयोगको लागि उपयुक्त छ, प्रत्येक नुहाउँदा एक कोमल र पौष्टिक स्पर्श सुनिश्चित गर्दै।'], '100.00 ', 'आफ्नो हातमा फोमिङ ह्यान्ड वाशको उदार मात्रा जारी गर्न पम्प थिच्नुहोस्।')">
+        <div class="pdescription"><b>साफी हैंडवास</b></div>
+        <div class="quantity"> मात्रा:<b>250 ML</b></div>
+        <div class="price">100.00 NPR <span class="discount">(15% छुट)</span></div>
+        <div class="star-rating">★★★★☆</div>
+        <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेन्डली साफी हैंडवास (250ml)', 'a4.jpg', 'साफी हैंडवास प्रस्तुत गर्दै, दैनिक हातको सरसफाइको लागि विलासी र प्रभावकारी समाधान। हेरचाह संग बनाइएको, हाम्रो हात धुने एक स्पा जस्तै अनुभव संग आफ्नो हात सफा गर्न, पोषण गर्न र लिप्त बनाउन को लागी डिजाइन गरिएको छ।', ['हाम्रो सूत्रले एक धनी, मखमली फोम उत्पादन गर्दछ जुन तपाइँको हात माथि ग्लाइड गर्दछ, एक विलासी र प्रभावकारी सफाई अनुभव प्रदान गर्दछ। सुख्खापन पैदा नगरी।', 'मोइस्चराइजिंग एजेन्टहरूले समृद्ध, यो हात धुनेले तपाइँको छालालाई प्यारो बनाउँछ, प्रत्येक प्रयोग पछि यसलाई नरम र हाइड्रेटेड महसुस गराउँछ। सुक्खा हातको असुविधालाई अलविदा भन्नुहोस्।', 'तपाईंको छालाको प्राकृतिक pH सन्तुलन कायम राख्न सावधानीपूर्वक तयार गरिएको, हाम्रो हात धुने नियमित प्रयोगको लागि उपयुक्त छ, प्रत्येक नुहाउँदा एक कोमल र पौष्टिक स्पर्श सुनिश्चित गर्दै।'], '100.00 ', 'आफ्नो हातमा फोमिङ ह्यान्ड वाशको उदार मात्रा जारी गर्न पम्प थिच्नुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+    </div>
+    
+    
+    <!-- Card 3 -->
+    <div class="pcard">
+        <img src="a3.jpg" alt="Product 3" onclick="showDetails('प्रिमियम इको-फ्रेन्डली  डिस वास लिक्विड (1L)', 'a3.jpg', 'भाँडा धुने  लिक्विड, जसलाई प्राय: डिश साबुन भनिन्छ, एक आवश्यक घर सफा गर्ने उत्पादन हो जुन कुशलतापूर्वक ग्रीस, खाद्य अवशेषहरू, र भाँडाहरू, भाँडाहरू र कुकवेयरबाट दागहरू हटाउन डिजाइन गरिएको हो। यो बहुमुखी सफाई समाधान हातमा कोमल रहँदा कडा गाँठो काट्ने प्रभावकारिताको लागि परिचित भान्साको मुख्य भाग हो। भाँडा धुने तरल पदार्थहरू विभिन्न ढाँचाहरूमा आउँछन्, जसले विभिन्न प्रकारका सुगन्धहरू र एन्टिब्याक्टेरियल गुणहरू जस्ता थप सुविधाहरू प्रदान गर्दछ।', ['भाँडा धुने तरल पदार्थहरू शक्तिशाली एजेन्टहरूद्वारा बनाइन्छ जसले ग्रीस र खानाका कणहरूलाई भत्काएर बाहिर निकाल्छ, राम्रोसँग सफाई सुनिश्चित गर्दछ।', 'धेरै डिश साबुनमा छालाको सुक्खापन र जलन रोक्नको लागि हल्का तत्वहरू समावेश हुन्छन्, तिनीहरूलाई पन्जा बिना नियमित प्रयोगको लागि उपयुक्त बनाउँदछ। , र प्यानहरू।'], '100.00 ', 'सतहहरू स्क्रब गर्न स्पन्ज वा डिश ब्रश प्रयोग गर्नुहोस्, जिद्दी अवशेष भएका क्षेत्रहरूमा थप ध्यान दिनुहोस्।')">
+        <div class="pdescription"><b>गाय छाप डिस वास</b></div>
+        <div class="quantity">मात्रा:<b>1 L</b></div>
+        <div class="price">100.00 NPR <span class="discount">(15% छुट )</span></div>
+        <div class="star-rating">★★★★☆</div>
+        <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेन्डली  डिस वास लिक्विड (1L)', 'a3.jpg', 'भाँडा धुने  लिक्विड, जसलाई प्राय: डिश साबुन भनिन्छ, एक आवश्यक घर सफा गर्ने उत्पादन हो जुन कुशलतापूर्वक ग्रीस, खाद्य अवशेषहरू, र भाँडाहरू, भाँडाहरू र कुकवेयरबाट दागहरू हटाउन डिजाइन गरिएको हो। यो बहुमुखी सफाई समाधान हातमा कोमल रहँदा कडा गाँठो काट्ने प्रभावकारिताको लागि परिचित भान्साको मुख्य भाग हो। भाँडा धुने तरल पदार्थहरू विभिन्न ढाँचाहरूमा आउँछन्, जसले विभिन्न प्रकारका सुगन्धहरू र एन्टिब्याक्टेरियल गुणहरू जस्ता थप सुविधाहरू प्रदान गर्दछ।', ['भाँडा धुने तरल पदार्थहरू शक्तिशाली एजेन्टहरूद्वारा बनाइन्छ जसले ग्रीस र खानाका कणहरूलाई भत्काएर बाहिर निकाल्छ, राम्रोसँग सफाई सुनिश्चित गर्दछ।', 'धेरै डिश साबुनमा छालाको सुक्खापन र जलन रोक्नको लागि हल्का तत्वहरू समावेश हुन्छन्, तिनीहरूलाई पन्जा बिना नियमित प्रयोगको लागि उपयुक्त बनाउँदछ। , र प्यानहरू।'], '100.00 ', 'सतहहरू स्क्रब गर्न स्पन्ज वा डिश ब्रश प्रयोग गर्नुहोस्, जिद्दी अवशेष भएका क्षेत्रहरूमा थप ध्यान दिनुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+    </div>
+    
+    <!-- Card 4 -->
+    <div class="pcard">
+        <img src="a2.jpg" alt="Product 2" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप पिताम्बरी लिक्विड (1L)', 'a2.jpg', 'गाय छाप पिताम्बरी लिक्विड एक विशेष रूपमा शिल्पित तरल पदार्थ हो जसलाई काँसाका भाँडाहरूको चम्किलो उपस्थितिलाई कायाकल्प गर्न र कायम राख्न डिजाइन गरिएको हो। यो सफा गर्ने समाधानले सामान्यतया शक्तिशाली सफाई एजेन्टहरूलाई कोमल घर्षणहरूसँग जोड्दछ जसले धातुलाई क्षति नदिई धब्बा र ग्रिमलाई प्रभावकारी रूपमा हटाउन मद्दत गर्दछ। तरल लागू गर्न सजिलो छ, सुविधाजनक र प्रभावकारी सफाईको लागि अनुमति दिँदै।', ['तरलले प्रभावकारी रूपमा पीतलको सतहहरूमा धब्बा र अक्सिडेशनलाई लक्षित गर्दछ, धातुलाई मौलिक चमकलाई पुनर्स्थापित गर्दछ।', 'धेरै ब्रास क्लीनरहरूले हल्का घर्षणहरू समावेश गर्दछ जसले हटाउन मद्दत गर्दछ। जिद्दी दागहरू र पीतललाई नखोजिकन विलोपनको।', 'प्रयोगकर्ताहरूले झन्झटमुक्त र प्रयोगकर्ता-मैत्री सफाई प्रक्रिया सुनिश्चित गर्दै, नरम कपडा वा स्पन्ज प्रयोग गरेर तरल पदार्थ लागू गर्न सक्छन्।'], '100.00 ', 'बिस्तारै पीतलको सतहमा रगड्नुहोस्, धमिलो वा विकृति भएको क्षेत्रहरूमा ध्यान केन्द्रित गर्नुहोस्।')">
+        <div class="pdescription"><b>गाय छाप पिताम्बरी लिक्विड</b></div>
+        <div class="quantity"> मात्रा:<b>1 L</b></div>
+        <div class="price">100.00 NPR <span class="discount">(15% छुट )</span></div>
+        <div class="star-rating">★★★★☆</div>
+        <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप पिताम्बरी लिक्विड (1L)', 'a2.jpg', 'गाय छाप पिताम्बरी लिक्विड एक विशेष रूपमा शिल्पित तरल पदार्थ हो जसलाई काँसाका भाँडाहरूको चम्किलो उपस्थितिलाई कायाकल्प गर्न र कायम राख्न डिजाइन गरिएको हो। यो सफा गर्ने समाधानले सामान्यतया शक्तिशाली सफाई एजेन्टहरूलाई कोमल घर्षणहरूसँग जोड्दछ जसले धातुलाई क्षति नदिई धब्बा र ग्रिमलाई प्रभावकारी रूपमा हटाउन मद्दत गर्दछ। तरल लागू गर्न सजिलो छ, सुविधाजनक र प्रभावकारी सफाईको लागि अनुमति दिँदै।', ['तरलले प्रभावकारी रूपमा पीतलको सतहहरूमा धब्बा र अक्सिडेशनलाई लक्षित गर्दछ, धातुलाई मौलिक चमकलाई पुनर्स्थापित गर्दछ।', 'धेरै ब्रास क्लीनरहरूले हल्का घर्षणहरू समावेश गर्दछ जसले हटाउन मद्दत गर्दछ। जिद्दी दागहरू र पीतललाई नखोजिकन विलोपनको।', 'प्रयोगकर्ताहरूले झन्झटमुक्त र प्रयोगकर्ता-मैत्री सफाई प्रक्रिया सुनिश्चित गर्दै, नरम कपडा वा स्पन्ज प्रयोग गरेर तरल पदार्थ लागू गर्न सक्छन्।'], '100.00 ', 'बिस्तारै पीतलको सतहमा रगड्नुहोस्, धमिलो वा विकृति भएको क्षेत्रहरूमा ध्यान केन्द्रित गर्नुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+    </div>
+
+    <div class="pcard">
+        <img src="a13.jpg" alt="Product 4" onclick="showDetails('प्रिमियम इको-फ्रेंडली साफी हार्पिक टॉयलेट क्लीनर (50ml)', 'a13.jpg', 'साफी हार्पिक टॉयलेट क्लीनर एक व्यापक रूपमा मान्यता प्राप्त र विश्वसनीय उत्पादन हो जुन सफा र ताजा शौचालय वातावरण कायम राख्न यसको शक्तिशाली सफाई क्षमताहरूको लागि परिचित छ। कडा दागहरू, कीटाणुहरू, र अप्रिय गन्धहरूलाई लक्षित गर्न विशेष रूपमा तयार गरिएको, हार्पिक ट्वाइलेट क्लीनरले शौचालय स्वच्छताको लागि प्रभावकारी समाधान प्रदान गर्दछ। यो उत्पादन तरल पदार्थ र ट्याब्लेटहरू सहित विभिन्न ढाँचाहरूमा आउँछ, प्रत्येक शौचालय सफाईमा सुविधा र दक्षता प्रदान गर्न डिजाइन गरिएको हो।', ['हार्पिक ट्वाइलेट क्लीनरले एक उन्नत सूत्रलाई घमण्ड गर्दछ जसले लाइमस्केल, खिया, र कडा पानी जम्मा सहित जिद्दी दागहरू छिर्न र हटाउँछ। .', 'तरल र ट्याब्लेट फारमहरूमा उपलब्ध, हार्पिकले विभिन्न प्राथमिकताहरू र शौचालय सफाई आवश्यकताहरू अनुरूप विकल्पहरू प्रदान गर्दछ।', 'उत्पादन कुशल सफाई कार्य हो जसले म्यानुअल स्क्रबिङ र मर्मतसम्भारको फ्रिक्वेन्सी कम गर्दै लामो समयसम्म चल्ने सफा सुनिश्चित गर्दछ।'], '99.00 ', 'पूर्ण कभरेज सुनिश्चित गर्दै शौचालयको कचौरा वरिपरि तरल पदार्थ निचोड्नुहोस्, र सिफारिस गरिएको अवधिको लागि बस्न दिनुहोस्। शौचालय ब्रश र फ्लश संग स्क्रब।')">
+        <div class="pdescription"><b>साफी हार्पिक टॉयलेट क्लीनर </b></div>
+        <div class="quantity">मात्रा:<b> 500 ML</b></div>
+        <div class="price">95.00 NPR <span class="discount">(15% छुट )</span></div>
+        <div class="star-rating">★★★★☆</div>
+        
+        <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली साफी हार्पिक टॉयलेट क्लीनर  (500ml)', 'a13.jpg', 'साफी हार्पिक टॉयलेट क्लीनर एक व्यापक रूपमा मान्यता प्राप्त र विश्वसनीय उत्पादन हो जुन सफा र ताजा शौचालय वातावरण कायम राख्न यसको शक्तिशाली सफाई क्षमताहरूको लागि परिचित छ। कडा दागहरू, कीटाणुहरू, र अप्रिय गन्धहरूलाई लक्षित गर्न विशेष रूपमा तयार गरिएको, हार्पिक ट्वाइलेट क्लीनरले शौचालय स्वच्छताको लागि प्रभावकारी समाधान प्रदान गर्दछ। यो उत्पादन तरल पदार्थ र ट्याब्लेटहरू सहित विभिन्न ढाँचाहरूमा आउँछ, प्रत्येक शौचालय सफाईमा सुविधा र दक्षता प्रदान गर्न डिजाइन गरिएको हो।', ['हार्पिक ट्वाइलेट क्लीनरले एक उन्नत सूत्रलाई घमण्ड गर्दछ जसले लाइमस्केल, खिया, र कडा पानी जम्मा सहित जिद्दी दागहरू छिर्न र हटाउँछ। .', 'तरल र ट्याब्लेट फारमहरूमा उपलब्ध, हार्पिकले विभिन्न प्राथमिकताहरू र शौचालय सफाई आवश्यकताहरू अनुरूप विकल्पहरू प्रदान गर्दछ।', 'उत्पादन कुशल सफाई कार्य हो जसले म्यानुअल स्क्रबिङ र मर्मतसम्भारको फ्रिक्वेन्सी कम गर्दै लामो समयसम्म चल्ने सफा सुनिश्चित गर्दछ।'], '99.00 ', 'पूर्ण कभरेज सुनिश्चित गर्दै शौचालयको कचौरा वरिपरि तरल पदार्थ निचोड्नुहोस्, र सिफारिस गरिएको अवधिको लागि बस्न दिनुहोस्। शौचालय ब्रश र फ्लश संग स्क्रब।')">विवरणहरू जाँच गर्नुहोस्</button>
+        </div>
+
+        <div class="pcard">
+            <img src="a14.jpg" alt="Product 4"  onclick="showDetails('प्रिमियम इको-फ्रेंडली साफी हार्पिक टॉयलेट क्लीनर (5L)', 'a14.jpg', 'साफी हार्पिक टॉयलेट क्लीनर एक व्यापक रूपमा मान्यता प्राप्त र विश्वसनीय उत्पादन हो जुन सफा र ताजा शौचालय वातावरण कायम राख्न यसको शक्तिशाली सफाई क्षमताहरूको लागि परिचित छ। कडा दागहरू, कीटाणुहरू, र अप्रिय गन्धहरूलाई लक्षित गर्न विशेष रूपमा तयार गरिएको, हार्पिक ट्वाइलेट क्लीनरले शौचालय स्वच्छताको लागि प्रभावकारी समाधान प्रदान गर्दछ। यो उत्पादन तरल पदार्थ र ट्याब्लेटहरू सहित विभिन्न ढाँचाहरूमा आउँछ, प्रत्येक शौचालय सफाईमा सुविधा र दक्षता प्रदान गर्न डिजाइन गरिएको हो।', ['हार्पिक ट्वाइलेट क्लीनरले एक उन्नत सूत्रलाई घमण्ड गर्दछ जसले लाइमस्केल, खिया, र कडा पानी जम्मा सहित जिद्दी दागहरू छिर्न र हटाउँछ। .', 'तरल र ट्याब्लेट फारमहरूमा उपलब्ध, हार्पिकले विभिन्न प्राथमिकताहरू र शौचालय सफाई आवश्यकताहरू अनुरूप विकल्पहरू प्रदान गर्दछ।', 'उत्पादन कुशल सफाई कार्य हो जसले म्यानुअल स्क्रबिङ र मर्मतसम्भारको फ्रिक्वेन्सी कम गर्दै लामो समयसम्म चल्ने सफा सुनिश्चित गर्दछ।'], '500.00 ', 'पूर्ण कभरेज सुनिश्चित गर्दै शौचालयको कचौरा वरिपरि तरल पदार्थ निचोड्नुहोस्, र सिफारिस गरिएको अवधिको लागि बस्न दिनुहोस्। शौचालय ब्रश र फ्लश संग स्क्रब।')">
+            <div class="pdescription"><b>साफी हार्पिक टॉयलेट क्लीनर</b></div>
+            <div class="quantity">मात्रा:<b> 5 L</b></div>
+            <div class="price">500.00 NPR <span class="discount">(15% छुट )</span></div>
+            <div class="star-rating">★★★★☆</div>
+            <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली साफी हार्पिक टॉयलेट क्लीनर (5L)', 'a14.jpg', 'साफी हार्पिक टॉयलेट क्लीनर एक व्यापक रूपमा मान्यता प्राप्त र विश्वसनीय उत्पादन हो जुन सफा र ताजा शौचालय वातावरण कायम राख्न यसको शक्तिशाली सफाई क्षमताहरूको लागि परिचित छ। कडा दागहरू, कीटाणुहरू, र अप्रिय गन्धहरूलाई लक्षित गर्न विशेष रूपमा तयार गरिएको, हार्पिक ट्वाइलेट क्लीनरले शौचालय स्वच्छताको लागि प्रभावकारी समाधान प्रदान गर्दछ। यो उत्पादन तरल पदार्थ र ट्याब्लेटहरू सहित विभिन्न ढाँचाहरूमा आउँछ, प्रत्येक शौचालय सफाईमा सुविधा र दक्षता प्रदान गर्न डिजाइन गरिएको हो।', ['हार्पिक ट्वाइलेट क्लीनरले एक उन्नत सूत्रलाई घमण्ड गर्दछ जसले लाइमस्केल, खिया, र कडा पानी जम्मा सहित जिद्दी दागहरू छिर्न र हटाउँछ। .', 'तरल र ट्याब्लेट फारमहरूमा उपलब्ध, हार्पिकले विभिन्न प्राथमिकताहरू र शौचालय सफाई आवश्यकताहरू अनुरूप विकल्पहरू प्रदान गर्दछ।', 'उत्पादन कुशल सफाई कार्य हो जसले म्यानुअल स्क्रबिङ र मर्मतसम्भारको फ्रिक्वेन्सी कम गर्दै लामो समयसम्म चल्ने सफा सुनिश्चित गर्दछ।'], '500.00 ', 'पूर्ण कभरेज सुनिश्चित गर्दै शौचालयको कचौरा वरिपरि तरल पदार्थ निचोड्नुहोस्, र सिफारिस गरिएको अवधिको लागि बस्न दिनुहोस्। शौचालय ब्रश र फ्लश संग स्क्रब।')">विवरणहरू जाँच गर्नुहोस्</button>
+            </div>
+
+            <div class="pcard">
+                <img src="a10.jpg" alt="Product 4" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप डिटर्जेंट लिक्विड (1L)', 'a10.jpg', 'हाम्रो क्रान्तिकारी अल्ट्राक्लिन लिक्विड धुलाई डिटर्जेंट को परिचय दिँदैछ - तपाईको लुगा धुने अनुभवलाई अभूतपूर्व स्तरको सरसफाई र ताजगीमा पुर्‍याउने पावरहाउस समाधान। अत्याधुनिक प्रविधिको साथ विशेष रूपमा बनाइएको, यो डिटर्जेन्ट तरल तपाईंको कपडाको हेरचाह गर्दा सबैभन्दा कठिन दागहरू पनि सामना गर्न डिजाइन गरिएको छ।', ['हाम्रो डिटर्जेन्ट तरलले कपडाको फाइबरहरूमा गहिरो प्रवेश गर्ने शक्तिशाली सूत्रलाई घमण्ड गर्दछ, प्रभावकारी रूपमा जिद्दी दागहरू हटाउने र हटाउने जस्ता। घाँस, वाइन, ग्रीस, र थपको रूपमा।', 'हरेक नुहाउँदा दिर्घकालिन ताजगीको फटको अनुभव गर्नुहोस्। डिटर्जेन्ट मनमोहक सुगन्धले भरिएको छ जसले तपाईंको लुगालाई सफा सुगन्धित बनाउँछ। ', 'अलिकति लामो बाटो जान्छ। अल्ट्राक्लिन अत्यधिक केन्द्रित छ, यो सुनिश्चित गर्दै कि तपाइँ प्रति बोतल अधिक धुने पाउनुहुनेछ।'], '180.00 ', 'तपाईंको लोडको साइजको आधारमा अल्ट्राक्लिन लिक्विड धुलाई डिटर्जेंट को उपयुक्त मात्रा मापन गर्नुहोस्। सिफारिस गरिएका खुराकहरूको लागि प्याकेजिङ्गमा दिशानिर्देशहरू हेर्नुहोस्।')">
+                <div class="pdescription"><b>गाय छाप डिटर्जेंट लिक्विड </b></div>
+                <div class="quantity">मात्रा:<b> 1 L</b></div>
+                <div class="price">180.00 NPR <span class="discount">(15% छुट )</span></div>
+                <div class="star-rating">★★★★☆</div>
+                <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप डिटर्जेंट लिक्विड (1L)', 'a10.jpg', 'हाम्रो क्रान्तिकारी अल्ट्राक्लिन लिक्विड धुलाई डिटर्जेंट को परिचय दिँदैछ - तपाईको लुगा धुने अनुभवलाई अभूतपूर्व स्तरको सरसफाई र ताजगीमा पुर्‍याउने पावरहाउस समाधान। अत्याधुनिक प्रविधिको साथ विशेष रूपमा बनाइएको, यो डिटर्जेन्ट तरल तपाईंको कपडाको हेरचाह गर्दा सबैभन्दा कठिन दागहरू पनि सामना गर्न डिजाइन गरिएको छ।', ['हाम्रो डिटर्जेन्ट तरलले कपडाको फाइबरहरूमा गहिरो प्रवेश गर्ने शक्तिशाली सूत्रलाई घमण्ड गर्दछ, प्रभावकारी रूपमा जिद्दी दागहरू हटाउने र हटाउने जस्ता। घाँस, वाइन, ग्रीस, र थपको रूपमा।', 'हरेक नुहाउँदा दिर्घकालिन ताजगीको फटको अनुभव गर्नुहोस्। डिटर्जेन्ट मनमोहक सुगन्धले भरिएको छ जसले तपाईंको लुगालाई सफा सुगन्धित बनाउँछ। ', 'अलिकति लामो बाटो जान्छ। अल्ट्राक्लिन अत्यधिक केन्द्रित छ, यो सुनिश्चित गर्दै कि तपाइँ प्रति बोतल अधिक धुने पाउनुहुनेछ।'], '180.00 ', 'तपाईंको लोडको साइजको आधारमा अल्ट्राक्लिन लिक्विड धुलाई डिटर्जेंट को उपयुक्त मात्रा मापन गर्नुहोस्। सिफारिस गरिएका खुराकहरूको लागि प्याकेजिङ्गमा दिशानिर्देशहरू हेर्नुहोस्।')">विवरणहरू जाँच गर्नुहोस्</button>
+                </div>
+
+                <div class="pcard">
+                    <img src="a6.jpg" alt="Product 2" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप फिनायल (500ml)', 'a6.jpg', ' गाय छाप सफाई फिनाइल प्रस्तुत गर्दै, तपाईंको घर सफा गर्ने दिनचर्यालाई माथि उठाउनको लागि एक शक्तिशाली र बहुमुखी समाधान। हाम्रो विशेष रूपले तयार गरिएको फिनाइल फोहोर, कीटाणु र अप्रिय गन्धलाई प्रभावकारी रूपमा सामना गर्न डिजाइन गरिएको हो।', ['हाम्रो क्लिनिङ फिनाईल शक्तिशाली तत्वहरूले भरिएको छ जसले कडा दाग र ग्रिमलाई छिर्न र विघटन गर्छ, तपाईंको भुइँ र सतहहरूलाई दागरहित रूपमा सफा राख्छ।', 'फर्म्युलेटेड। कीटाणु र ब्याक्टेरियाको फराकिलो स्पेक्ट्रमलाई हटाउन, तपाईं र तपाईंको परिवारको लागि स्वच्छ वातावरण सुनिश्चित गर्दै।', 'फ्लोर, टाइलहरू र काउन्टरटपहरू सहित विभिन्न सतहहरूको लागि उपयुक्त। बहुमुखी प्रतिभा तपाईंको सबै सफाई आवश्यकताहरू प्रभावकारी रूपमा सम्बोधन गर्न कुञ्जी हो।'], '60.00 ', 'सफा गर्ने फिनाईललाई सिफारिस गरिएको अनुपात अनुसार पातलो गर्नुहोस्। सामान्यतया, इष्टतम प्रभावकारिता को लागी एक सानो मात्रा पानी संग मिश्रित छ।')">
+                    
+                    <div class="pdescription"><b>गाय छाप क्लिनिंग फिनायल</b></div>
+                    <div class="quantity">मात्रा:<b> 500 ML</b></div>
+                    <div class="price">60.00 NPR <span class="discount">(15% छुट )</span></div>
+                    <div class="star-rating">★★★★☆</div>
+                    
+                   
+                    <button class="button check-details-btn" onclick="showDetails('प्रिमियम इको-फ्रेंडली गाय छाप फिनायल (500ml)', 'a6.jpg', 'गाय छाप सफाई फिनाइल प्रस्तुत गर्दै, तपाईंको घर सफा गर्ने दिनचर्यालाई माथि उठाउनको लागि एक शक्तिशाली र बहुमुखी समाधान। हाम्रो विशेष रूपले तयार गरिएको फिनाइल फोहोर, कीटाणु र अप्रिय गन्धलाई प्रभावकारी रूपमा सामना गर्न डिजाइन गरिएको हो।', ['हाम्रो क्लिनिङ फिनाईल शक्तिशाली तत्वहरूले भरिएको छ जसले कडा दाग र ग्रिमलाई छिर्न र विघटन गर्छ, तपाईंको भुइँ र सतहहरूलाई दागरहित रूपमा सफा राख्छ।', 'फर्म्युलेटेड। कीटाणु र ब्याक्टेरियाको फराकिलो स्पेक्ट्रमलाई हटाउन, तपाईं र तपाईंको परिवारको लागि स्वच्छ वातावरण सुनिश्चित गर्दै।', 'फ्लोर, टाइलहरू र काउन्टरटपहरू सहित विभिन्न सतहहरूको लागि उपयुक्त। बहुमुखी प्रतिभा तपाईंको सबै सफाई आवश्यकताहरू प्रभावकारी रूपमा सम्बोधन गर्न कुञ्जी हो।'], '60.00 ', 'सफा गर्ने फिनाईललाई सिफारिस गरिएको अनुपात अनुसार पातलो गर्नुहोस्। सामान्यतया, इष्टतम प्रभावकारिता को लागी एक सानो मात्रा पानी संग मिश्रित छ।')">विवरणहरू जाँच गर्नुहोस्</button>
+                    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Details Popup -->
+<div class="details-popup" id="detailsPopup">
+<div class="popup-content">
+    <div class="popup-header">
+        <h2 id="popupTitle"></h2>
+        <span class="close-popup" onclick="closePopup()">&times;</span>
+    </div>
+    <img id="popupImage" src="" alt="Product Image">
+    <p id="popupDescription"></p>
+    <h3>मुख्य विशेषताहरु:</h3>
+    <ul id="popupKeyFeatures"></ul>
+    <p id="popupPrice"></p>
+    <h3>प्रयोग निर्देश:</h3>
+    <p id="popupUsageInstructions"></p>
+    
+    <button class="button buy-now-btn" onclick="addToCart()">अहिले खरिद गर</button>
+    <button class="button cancel-btn" onclick="closePopup()">रद्द गर्नुहोस्</button>
+</div>
+</div>
+</section>
+
+
+ 
+ 
+
+
+
+
+
+  
+
+<section>
+    <img src="bottom1.png" alt="Website Header Image">
+</section>
+
+<section class="subheading1">
+    <h1>पसल उत्पादनहरू</h1>
+
+    <div class="subheading-container">
+        <div>
+            <h2>By Type</h2>
+            <p><a href="nshop.html">लुगा धुने पाउडर</a></p>
+            <p><a href="nshop.html">PODS</a></p>
+            <p><a href="nshop.html">लिक्विड</a></p>
+           
+        </div>
+
+        <div>
+            <h2>By Need</h2>
+            <p><a href="nshop.html"> हैंडवास</a></p>
+            <p><a href="https://www.google.com/search?q=semi+automatic+washing+machine&oq=semiautomatis&gs_lcrp=EgZjaHJvbWUqCQgBEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyCQgCEAAYDRiABDIJCAMQABgNGIAEMgkIBBAAGA0YgAQyCQgFEAAYDRiABDIJCAYQABgNGIAEMgkIBxAAGA0YgAQyCQgIEAAYDRiABDIJCAkQABgNGIAE0gEJMTE5OTdqMWo3qAIAsAIA&sourceid=chrome&ie=UTF-8">अर्ध स्वचालित वाशिंग मेशिन</a></p>
+            <p><a href="https://www.google.com/search?q=fully+automatic+washing+machine&oq=full&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRg5MgwIAhAAGEMYgAQYigUyDAgDEAAYQxiABBiKBTIMCAQQABhDGIAEGIoFMgwIBRAAGEMYgAQYigUyDAgGEAAYQxiABBiKBTIMCAcQABhDGIAEGIoFMgcICBAAGIAEMgoICRAAGLEDGIAE0gEIMjc2NGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8">पूर्ण स्वचालित वाशिंग मेशीन</a></p>
+            
+
+            
+        </div>
+         
+        <div>
+            <h2>कपडा कसरी धुने</h2>
+            
+            <h2 class="down">मद्दत र समर्थन</h2>
+            <p><a href="ncontact.html">हामीलाई सम्पर्क गर्नुहोस</a></p>
+            
+            
+            
+        </div>
+
+
+
+
+    </div>
+</section>
+
+<section>
+    <footer>
+        <div class="social-icons">
+          <div class="social-icon">
+            <a href="https://instagram.com/saafi_ariel?utm_source=qr&igshid=YzU1NGVlODEzOA==" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="social-icon">
+            <a href="https://wa.me/+9779826448200" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+          <div class="social-icon">
+            <a href="https://www.facebook.com/saafi.ariel.1?mibextid=ZbWKwL" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+          <div class="social-icon">
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          
+        </div>
+       
+      </footer>
+</section>
+
+
+
+
+
+
+
+<script>
+    // Redirect function
+    function redirectToSelectedLanguage() {
+      var selectedLanguage = document.getElementById("languageSelect").value;
+      if (selectedLanguage !== "") {
+        window.location.href = selectedLanguage;
+      }
+    }
+    
+    // Remove border when select loses focus
+    function removeBorder() {
+      document.getElementById("languageSelect").style.border = "none";
+    }
+    </script>
+    
+
+   
+<script>
+    function showProduct(productNumber) {
+        var productContents = document.querySelectorAll('.product-content');
+        productContents.forEach(function (content) {
+            content.classList.remove('active');
+        });
+
+        var selectedProduct = document.getElementById('product' + productNumber);
+        if (selectedProduct) {
+            selectedProduct.classList.add('active');
+        }
+    }
+</script>
+      <script>
+        function openInstagram() {
+            window.location.href = "https://www.instagram.com/";
+        }
+    </script>
+    <script>
+        function addToCart() {
+            alert('यो वस्तु किन्नको लागि, हाम्रो पसलमा जानुहोस् वा हामीलाई व्हाट्सएप गर्नुहोस्। (फोन नम्बर: +9779826448200 ठेगाना: मायादेवी-०१, पाकडी कपिलवस्तु, नेपाल) धन्यवाद......'); // You can replace this with your own pop-up/modal logic
+        }
+    </script>
+
+<script>
+    function showDetails(productName, image, description, keyFeatures, price, usageInstructions) {
+        const discountPrice = calculateDiscount(price, 15);
+        const coloredDiscountPrice = `<span style="color: #FF0000;">${discountPrice}</span>`;
+
+        document.getElementById('popupTitle').innerText = productName;
+        document.getElementById('popupImage').src = image;
+        document.getElementById('popupDescription').innerText = description;
+
+        const keyFeaturesList = document.getElementById('popupKeyFeatures');
+        keyFeaturesList.innerHTML = keyFeatures.map(feature => `<li>${feature}</li>`).join('');
+
+        document.getElementById('popupPrice').innerHTML = `<strong>मूल्य:</strong> ${price} <span class="discount">(प्रत्यक्ष बिक्री मा 15% छुट: ${coloredDiscountPrice} NPR मात्र)</span>`;
+        document.getElementById('popupUsageInstructions').innerText = usageInstructions;
+
+        document.getElementById('detailsPopup').style.display = 'flex';
+    }
+
+    function closePopup() {
+        document.getElementById('detailsPopup').style.display = 'none';
+    }
+    function calculateDiscount(originalPrice, discountPercentage) {
+        const discountAmount = (originalPrice * discountPercentage) / 100;
+        const discountedPrice = originalPrice - discountAmount;
+        return discountedPrice.toFixed(2);
+    }
+</script>
+
+</body>
+</html>

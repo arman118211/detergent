@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saafi Ariel-about</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+
+
+body{
+            background-color: #f1f1f1;
+            
+            margin: 0;
+        }
+        header {
+            position: sticky;
+      top: 0;
+      z-index: 1000;
+            
+            min-width: 800px; /* Set a minimum width for the header */
+        }
+
+        #header-links {
+            position: absolute;
+            top: 0px;
+            right: 20px;
+        }
+        #header-links a:hover{
+            color: #5851DB;
+            font-size: 21px;
+        }
+        
+        
+        
+        img{
+            width: 100%;
+        }
+
+        #bottom-left-links {
+            position: absolute;
+            bottom: 20px;
+            left: 362px;
+        }
+
+        /* Increase the height and width of the link text */
+        #header-links a {
+            display: inline-block;
+            margin-right: 20px; /* Increased spacing between links */
+            text-decoration: none;
+            padding: 10px 20px; /* Padding for spacing, adjust as needed */
+            
+            color: #35408c; /* Text color for links */
+             
+            line-height: 30px; /* Increase the height of the link text */
+            font-size: 20px; /* Increase the font size for wider text */
+        }
+       
+
+
+         #bottom-left-links a {
+            display: inline-block;
+            margin-right: 20px; /* Increased spacing between links */
+            text-decoration: none;
+            padding: 10px 20px; /* Padding for spacing, adjust as needed */
+            
+            color: #35408c; /* Text color for links */
+             
+            line-height: 30px; /* Increase the height of the link text */
+            font-size: 19px; /* Increase the font size for wider text */
+        }
+        #bottom-left-links a:hover{
+            color: #5851DB;
+            font-size: 20px;
+        }
+
+        /* Add styles for the search bar */
+        #searchInput {
+            width: 200px; /* Increased width for the search bar */
+            padding: 5px;
+            border: 1px solid #35408c;
+            border-radius: 37px;
+        }
+
+
+        #languageSelect {
+            margin-right: 38px;
+  font-size: 20px; /* Increase font size */
+  border: none; /* Remove border initially */
+  background-color: transparent; /* Remove background color */
+  padding: 8px; /* Adjust padding as needed */
+  outline: none; /* Remove outline */
+  color: #35408c;
+  font-family: inherit;
+}
+
+#languageSelect:focus {
+  border: none; /* Remove border on focus */
+}
+#languageSelect:hover{
+    font-size: 21px;
+    color: #5851DB;
+}
+/* Style for the options */
+#languageSelect option {
+  border: none; /* Remove border for options */
+}
+/* Responsive styling using media queries */
+@media screen and (min-width: 768px) {
+  /* Adjusting the maximum width for larger screens */
+  #languageSelect {
+    max-width: 300px;
+  }
+}
+
+
+
+/* Add media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    body{
+        width: 376%;
+    }
+    header img{
+        width: 100%;
+    }
+    #header-links {
+        position: static;
+        text-align: center; /* Center align for smaller screens */
+        margin-top: 10px; /* Adjust spacing for smaller screens */
+    }
+    
+    #bottom-left-links {
+        position: static;
+        text-align: center; /* Center align for smaller screens */
+        margin-top: 10px; /* Adjust spacing for smaller screens */
+        width: 100%; /* Full width for smaller screens */
+    }
+    
+    #searchInput {
+        width: 60%; /* Adjusted width for smaller screens */
+        margin-top: 10px; /* Adjust spacing for smaller screens */
+    }
+    .popup-content .close-btn{
+        top: 758px;
+        right: 219px;
+    }
+    
+}
+ 
+
+
+
+
+        #msg{
+            margin-top: -4px;
+    text-align: center;
+    background-color: white;
+    
+    
+    
+}
+#msg p {
+    color: #35408c;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p{
+    font-size: 27px;
+}
+
+
+
+
+        .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: top 20% right 0;
+   
+    
+   
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Position the text over the images */
+.text {
+    position: absolute;
+    top: 150px; /* Adjust the distance from the top */
+    left: 60px; /* Adjust the distance from the left */
+    color:white; /* Adjust text color */
+     /* Adjust background color */
+    padding: 10px; /* Adjust padding */
+
+    height: 90vh;
+    width: 100%;
+  
+    
+}
+.text button{
+    border: 1px;
+    width: 161px;
+    height: 53px;
+    border-radius: 20px;
+    font-size: 21px;
+    background-color: #35408c;
+    color: white;
+}
+.text button:hover{
+    background-color: #5851DB;
+}
+.text h4{
+    font-size: 20px;
+}
+.text h2{
+    font-size: 46px;
+    line-height: 0px;
+}
+.text h1{
+    font-size: 50px;
+    line-height: 0px;
+}
+.text h2{
+    font-size: 27px;
+    line-height: 0px;
+}
+/* Style for the images in the slideshow */
+.slide img {
+    width: 100%;
+    height: 700px;
+}
+
+
+#msg2{
+    text-align: initial;
+    background-color: #f1f1f1;
+    
+    
+    
+    
+}
+#msg2 p {
+    color: #35408c;
+    margin-top: 23px;
+    margin-bottom: 40px;
+    margin-left: 115px;
+    font-size: 42px;
+    background-color: #f1f1f1;
+}
+p{
+    font-size: 27px;
+}
+
+#msg2 h3 {
+    color: #35408c;
+    margin-top: -25px;
+    margin-bottom: 40px;
+    margin-left: 115px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+}
+
+
+/* for card */
+
+#card1{
+            background-color: #f1f1f1;
+        }
+        .card-container {
+            margin-left: 208px;
+            margin-right: 208px;
+            display: flex;
+            justify-content: space-between; /* Adjust as needed */
+            
+        
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 446px;
+            background-color:white;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+        }
+       
+
+        .card-content {
+            padding: 20px;
+        }
+        .card:hover img {
+            transform: scale(1.1); /* Increase size on hover */
+        }
+
+        .card h2 {
+            color: #ee1d23;
+        }
+
+        .card p {
+            color: #35408c;
+        }
+
+
+         /* featured product */
+          /* Flex container to create a row */
+          .card-container1 {
+            margin-left: 100px;
+            margin-right: 100px;
+            display: flex;
+            justify-content: space-around; /* Adjust as needed */
+            flex-wrap: nowrap; /* Ensure cards stay in one row */
+        }
+
+        /* Card styles */
+        .card2 {
+            flex: 0 0 22%; /* Adjust width as needed */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px;
+            text-align: center;
+        }
+        .card2 h2{
+            color:#ee1d23 ;
+        }
+
+        .card2 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 16px;
+            transition: transform 0.3s ease-in-out; /* Add smooth transition */
+        }
+
+        .card2 img:hover {
+            transform: scale(1.1); /* Add scale effect on hover */
+        }
+
+        .star-rating {
+            margin-top: 8px;
+           /* Set star color to gold */
+            color: #35408c;
+            font-size: 1.5em;
+        }
+
+        .shop-button {
+            background-color: #35408c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 24px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 8px;
+            transition: background-color 0.3s ease-in-out; /* Add smooth transition */
+        }
+
+        .shop-button:hover {
+            background-color: #5851DB; /* Change color on hover */
+        }
+
+
+ /* saafigram*/
+         /* Flex container to create rows */
+         .image-container {
+            margin-left: 115px;
+            margin-right: 115px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        /* Style for individual images */
+        .image-card {
+            flex: 0 0 20%; /* Adjust width as needed */
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+       .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out; /* Add smooth transition */
+        }
+
+       .image-card img:hover {
+            transform: scale(1.1); /* Add scale effect on hover */
+        }
+
+
+       /* button instagram */
+       .insta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15vh;
+            margin: 0;
+        }
+
+        .insta button {
+            padding: 10px 20px;
+            font-size: 23px;
+            background-color: #35408c;
+            color: white;
+            border: none;
+            border-radius: 35px;
+            cursor: pointer;
+        }
+
+        .insta button:hover {
+            background-color: #5851DB;
+            font-size: 24px;
+        }
+
+     /* three sub heading*/
+
+        .subheading1{
+            margin-top: -40px;
+            margin-left: 0px;
+            color: #35408c;
+            background-color: white;
+        }
+        .subheading1 h1{
+            margin-bottom: 10px;
+            margin-left: 115px;
+            
+            font-size: 42px;
+        }
+        .subheading1 h2{
+            font-size: 20px;
+            margin-left: 115px;
+            
+            
+        }
+        
+        .subheading-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .subheading-container div {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .subheading-container div p {
+            margin-top: -14px;
+        }
+        .subheading-container div .down {
+            margin-top: 53px;
+        }
+        .subheading-container div a {
+            text-decoration: none;
+            color: #35408c;
+            margin-left: 115px;
+            font-size: 17px;
+        }
+        .subheading-container div a:hover {
+            color: #5851DB;
+            font-size:18px ;
+        }
+
+      /* footer*/
+
+        footer {
+      position: relative;
+      height: 115px; /* Adjust the height of your header image */
+      background: url('n1.png') center/cover no-repeat; /* Adjust the path to your header image */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+    }
+    .social-icons {
+        margin-right: 775px;
+        margin-top: -67px;
+      display: flex;
+    }
+    .social-icon {
+      margin-right: 23px;
+      font-size: 27px;
+      color: white;
+    }
+    .social-icon a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .social-icon:hover {
+      transform: scale(1.2); /* Adjust the scale factor for the hover effect */
+    }
+     #ariel p{
+        
+        color: #35408c;
+        font-size: 22px;
+    }
+
+
+
+
+
+
+
+        .about {
+            
+            margin: 23px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .acard {
+            max-width: 972px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .acard img {
+            border-radius: 15px;
+            width: 89%;
+            height: 411px;
+            object-fit: cover;
+            margin-top: 23px;
+        }
+
+        .acard-content {
+            padding: 20px;
+        }
+
+        .acard-content h2, p {
+            margin: 0;
+        }
+
+        .acard-content h2 {
+            color: #35408c;
+            margin-bottom: 10px;
+        }
+
+        .acard-content p {
+            font-size: 16px;
+            color: #35408c;
+            margin-bottom: 5px;
+        }
+        #bottom-left-links .active{
+        font-size: 20px;
+        color: #5851DB;
+        
+      }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="head3.png" alt="Website Header Image" onclick="window.location.href='index.html';">
+        <div id="header-links">
+            <a href="contact.html">CONTACT US</a>
+            <select id="languageSelect" onchange="redirectToSelectedLanguage()" onblur="removeBorder()">
+                <option value="index.html">NEPAL - ENGLISH</option>
+                <option value="nindex.html">NEPAL - NEPALI</option>
+                
+              </select>
+            <input type="text"  placeholder="Search" id="searchInput" onkeydown="searchKeyPress(event)"  onclick="search()">
+        </div>
+        <div id="bottom-left-links">
+            <a  href="shop.html"><b>Shop Product </b></a>
+            <a href="step.html"><b>How To Wash Cloths </b></a>
+            <a class="active" href="about.html"><b>About Saafi Ariel </b></a>
+        </div>
+    </header>
+    <section class="about">
+       
+        <div class="acard">
+           
+            <img src="founder1.jpg" alt="Founder Image">
+            <div class="acard-content">
+                <h2> <b>MR. KALAMUDDEEN</b></h2>
+                <p>Date of Birth: September 16, 1980</p>
+                <p>Company: Saafi Ariel</p>
+                <p>Founder since: 2018</p>
+                <p>Experience: Over 15 years in the detergent industry</p>
+                <p>Email: saafi2074@gmail.com</p>
+                
+                <p><b>Saafi Ariel Overview:</b></p>
+                <p>Saafi Ariel, founded by Kalamuddeen in 2018, is a leading detergent company known for its commitment to quality and innovation. Kalamuddeen's vision was to create a brand that not only cleans clothes effectively but also cares for the environment.</p>
+                <p>Under Kalamuddeen's leadership, Saafi Ariel has become synonymous with reliability and eco-friendly solutions. The company has consistently introduced groundbreaking products that have revolutionized the detergent industry.</p>
+                <p>Kalamuddeen's dedication to excellence and sustainable practices has earned Saafi Ariel a loyal customer base and numerous accolades in the industry.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <img src="bottom1.png" alt="Website Header Image">
+    </section>
+    
+    <section class="subheading1">
+        <h1>SHOP PRODUCTS</h1>
+    
+        <div class="subheading-container">
+            <div>
+                <h2>By Type</h2>
+                <p><a href="shop.html">Washing Powder</a></p>
+                <p><a href="shop.html">PODS</a></p>
+                <p><a href="shop.html">Liquid</a></p>
+               
+            </div>
+    
+            <div>
+                <h2>By Need</h2>
+                <p><a href="shop.html">Handwash</a></p>
+                <p><a href="https://www.google.com/search?q=semi+automatic+washing+machine&sca_esv=585622851&sxsrf=AM9HkKkhYs_j-XsVCypvLjlvFfYmSzyNrw%3A1701096829089&ei=fa1kZaTrBN_lseMPlcekOA&oq=semi&gs_lp=Egxnd3Mtd2l6LXNlcnAiBHNlbWkqAggAMgoQIxiABBiKBRgnMgoQABiABBiKBRhDMgoQABiABBiKBRhDMggQABiABBixAzINEAAYgAQYFBiHAhixAzIKEAAYgAQYigUYQzIIEAAYgAQYsQMyChAAGIAEGIoFGEMyCBAAGIAEGLEDMgUQABiABEjRNFDMBViDInACeAGQAQKYAbMKoAGoI6oBDTItMy4wLjEuMS4wLjK4AQHIAQD4AQGoAhTCAgoQABhHGNYEGLADwgIEECMYJ8ICBxAjGOoCGCfCAhYQABgDGI8BGOUCGOoCGLQCGIwD2AEBwgIWEC4YAxiPARjlAhjqAhi0AhiMA9gBAcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYigUYsQMYgwHCAhAQLhiABBiKBRjHARjRAxhD4gMEGAAgQYgGAZAGCLoGBggBEAEYCw&sclient=gws-wiz-serp">Semi automatic washing machine</a></p>
+                <p><a href="https://www.google.com/search?q=fully+automatic+washing+machine&sca_esv=585622851&sxsrf=AM9HkKmKwujRgKwyqMiD5-jqE-u-e3UQ6w%3A1701096852067&ei=lK1kZdHNA6aZseMPv6OL2A8&oq=fully&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWZ1bGx5KgIIADINEAAYgAQYigUYsQMYQzIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIKEAAYgAQYigUYQ0ivOFDeBVjQInACeAGQAQWYAdkCoAHfEqoBBTItOS4xuAEByAEA-AEBqAIUwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGLADGEPCAgoQIxiABBiKBRgnwgIFEAAYgATCAggQLhiABBjlBMICBxAjGOoCGCfCAhMQABiABBiKBRjqAhi0AhhD2AEBwgIWEC4YgAQYigUYsQMYgwEYxwEY0QMYQ8ICERAuGIMBGMcBGLEDGNEDGIAEwgIOEAAYgAQYigUYsQMYgwHCAgsQABiABBixAxiDAcICCxAAGIAEGIoFGLEDwgIIEC4YsQMYgATCAggQLhiABBixA8ICCBAAGIAEGLED4gMEGAAgQYgGAZAGCroGBggBEAEYAQ&sclient=gws-wiz-serp">Fully automatic washing machine</a></p>
+                
+    
+                
+            </div>
+             
+            <div>
+                <h2>How to wash cloth</h2>
+                
+                <h2 class="down">Help & Support</h2>
+                <p><a href="contact.html">Contact us</a></p>
+                
+                
+                
+            </div>
+    
+    
+    
+    
+        </div>
+    </section>
+    
+    <section>
+        <footer>
+            <div class="social-icons">
+              <div class="social-icon">
+                <a href="https://instagram.com/saafi_ariel?utm_source=qr&igshid=YzU1NGVlODEzOA==" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="https://wa.me/+9779826448200" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="https://www.facebook.com/saafi.ariel.1?mibextid=ZbWKwL" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+              
+            </div>
+            
+          </footer>
+    </section>
+    
+
+
+    <script>
+        // Redirect function
+        function redirectToSelectedLanguage() {
+          var selectedLanguage = document.getElementById("languageSelect").value;
+          if (selectedLanguage !== "") {
+            window.location.href = selectedLanguage;
+          }
+        }
+        
+        // Remove border when select loses focus
+        function removeBorder() {
+          document.getElementById("languageSelect").style.border = "none";
+        }
+       </script>
+        
+    <script>
+        
+        function searchKeyPress(event) {
+            if (event.key === "Enter") {
+                search();
+            }
+        }
+    
+        function search() {
+            // Get the value from the search input
+            var searchTerm = document.getElementById("searchInput").value;
+    
+            // Check if the search term is not empty
+            if (searchTerm.trim() !== "") {
+                // Navigate to the new HTML file (replace "newpage.html" with your actual file name)
+                window.location.href = "shop.html?search=" + encodeURIComponent(searchTerm);
+    
+                // Clear the search input
+                document.getElementById("searchInput").value = "";
+            }
+        }
+    </script>
+
+</body>
+</html>
